@@ -31,6 +31,10 @@ function parsePopulation(s: string): number {
   return parseInt(s.replace(/,/g, '')) || 0;
 }
 
+function fmt(n: number): string {
+  return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+
 function getMilitaryScore(c: Country): number {
   const army = parseNum(c.armyPersonnel);
   const navy = parseNum(c.navyPersonnel);
@@ -69,7 +73,7 @@ function calcLosses(scoreA: number, scoreB: number, baseLoss: number): { aLoss: 
   const ratio = scoreA / total;
   const aLoss = Math.round(baseLoss * (1 - ratio) * (1 + Math.random() * 0.3));
   const bLoss = Math.round(baseLoss * ratio * (1 + Math.random() * 0.3));
-  return { aLoss: aLoss.toLocaleString('ar-EG'), bLoss: bLoss.toLocaleString('ar-EG') };
+  return { aLoss: aLoss.fmt, bLoss: bLoss.fmt };
 }
 
 function simulateWar(attacker: Country, defender: Country): { rounds: RoundResult[]; winnerId: string; winnerAr: string; reason: string } {
@@ -252,8 +256,8 @@ export default function WarGame({ onClose }: { onClose: () => void }) {
                   <div className="space-y-3">
                     <div>
                       <div className="flex justify-between text-sm mb-1">
-                        <span className="text-red-400">{attacker?.nameAr}: {round.attackerScore.toLocaleString('ar-EG')}</span>
-                        <span className="text-blue-400">{defender?.nameAr}: {round.defenderScore.toLocaleString('ar-EG')}</span>
+                        <span className="text-red-400">{attacker?.nameAr}: {round.attackerScore.fmt}</span>
+                        <span className="text-blue-400">{defender?.nameAr}: {round.defenderScore.fmt}</span>
                       </div>
                       <div className="w-full bg-gray-800 rounded-full h-3 overflow-hidden flex">
                         <div className="bg-gradient-to-l from-red-500 to-red-600 h-full transition-all duration-1000"
