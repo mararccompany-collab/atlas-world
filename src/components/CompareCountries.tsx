@@ -10,7 +10,8 @@ export default function CompareCountries({ onClose }: CompareCountriesProps) {
   const [search, setSearch] = useState('');
 
   const filtered = countries.filter(c =>
-    c.nameAr.includes(search) || c.name.toLowerCase().includes(search.toLowerCase())
+    c.nameAr.toLowerCase().includes(search.toLowerCase()) || 
+    c.name.toLowerCase().includes(search.toLowerCase())
   );
 
   const toggleCountry = (country: Country) => {

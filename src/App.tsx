@@ -247,48 +247,75 @@ export default function App() {
   const nuclearCount = countries.filter(c => c.military.nuclear).length;
 
   return (
-    <div className="min-h-screen bg-[#0a0a0f] text-white" dir="rtl">
-      {/* Animated Background */}
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-950 text-white" dir="rtl">
+      {/* Premium Animated Background */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent" />
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute top-1/3 left-1/4 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl" />
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-blue-500/5 via-transparent to-purple-500/5" />
+        <div className="absolute -top-1/2 -right-1/4 w-[800px] h-[800px] bg-gradient-radial from-blue-500/20 to-transparent rounded-full blur-3xl animate-pulse" />
+        <div className="absolute -bottom-1/2 -left-1/4 w-[600px] h-[600px] bg-gradient-radial from-purple-500/15 to-transparent rounded-full blur-3xl animate-slow-pulse" />
+        <div className="absolute top-1/3 left-1/3 w-[400px] h-[400px] bg-gradient-radial from-amber-500/10 to-transparent rounded-full blur-2xl" />
       </div>
 
-      {/* Header */}
-      <header className="relative z-10 bg-gradient-to-b from-[#0a0a0f] via-[#0a0a0f]/95 to-transparent sticky top-0 backdrop-blur-xl border-b border-white/5">
+      {/* Premium Header with Seal */}
+      <header className="relative z-10 bg-gradient-to-b from-slate-900/95 via-slate-900/90 to-transparent sticky top-0 backdrop-blur-2xl border-b border-blue-500/20 shadow-2xl">
+        {/* Decorative Top Line */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent"></div>
+        
         <div className="max-w-7xl mx-auto px-4 py-6">
+          {/* Ribbon Badge */}
+          <div className="flex items-center justify-center mb-4">
+            <div className="px-4 py-1.5 rounded-full border border-gold/30 bg-gradient-to-r from-amber-600/10 to-amber-500/10 text-amber-300 text-xs font-semibold tracking-widest">
+              🌍 الموسوعة العالمية الموثوقة
+            </div>
+          </div>
+
           <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
-            <div className="flex items-center gap-5">
+            {/* Left: Logo & Title */}
+            <div className="flex items-center gap-6">
               <div className="relative">
-                <div className="text-6xl lg:text-7xl">🌍</div>
-                <div className="absolute -inset-4 bg-gradient-to-r from-amber-400 to-orange-500 rounded-full blur-2xl opacity-30 animate-pulse" />
+                <div className="text-7xl animate-bounce-slow">🌍</div>
+                <div className="absolute -inset-6 bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 rounded-full blur-3xl opacity-30 animate-pulse"></div>
               </div>
-              <div>
-                <h1 className="text-4xl lg:text-5xl font-black bg-gradient-to-r from-amber-300 via-yellow-400 to-orange-400 bg-clip-text text-transparent">
-                  أطلس العالم
+              <div className="space-y-1">
+                <h1 className="text-5xl lg:text-6xl font-black tracking-tight">
+                  <span className="bg-gradient-to-r from-cyan-200 via-blue-300 to-purple-300 bg-clip-text text-transparent">أطلس</span>
+                  <span className="block bg-gradient-to-r from-amber-300 via-yellow-300 to-orange-300 bg-clip-text text-transparent">العالم</span>
                 </h1>
-                <p className="text-gray-400 text-sm lg:text-base mt-1">موسوعة شاملة لجميع دول العالم</p>
+                <p className="text-blue-300/80 text-sm font-light tracking-wide">موسوعة شاملة ومعتمدة لـ جميع دول العالم</p>
               </div>
             </div>
             
-            {/* Stats Cards */}
+            {/* Right: Statistics */}
             <div className="flex gap-3 flex-wrap justify-center">
-              <div className="bg-gradient-to-br from-amber-500/20 to-amber-600/5 border border-amber-500/30 rounded-2xl px-5 py-3 text-center min-w-[100px]">
-                <div className="text-3xl font-black text-amber-400">{countries.length}</div>
-                <div className="text-xs text-amber-300/70">دولة</div>
+              <div className="group relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-amber-500 to-orange-600 rounded-xl blur-lg opacity-40 group-hover:opacity-60 transition-all"></div>
+                <div className="relative bg-gradient-to-br from-amber-600/20 to-orange-700/10 border border-amber-500/40 rounded-xl px-5 py-3 text-center min-w-[120px] backdrop-blur-xl hover:border-amber-500/60 transition-all">
+                  <div className="text-2xl font-black text-amber-300">{countries.length}+</div>
+                  <div className="text-xs text-amber-200/70 font-semibold">دول العالم</div>
+                </div>
               </div>
-              <div className="bg-gradient-to-br from-emerald-500/20 to-emerald-600/5 border border-emerald-500/30 rounded-2xl px-5 py-3 text-center min-w-[100px]">
-                <div className="text-3xl font-black text-emerald-400">{arabCount}</div>
-                <div className="text-xs text-emerald-300/70">دولة عربية</div>
+
+              <div className="group relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 to-green-600 rounded-xl blur-lg opacity-40 group-hover:opacity-60 transition-all"></div>
+                <div className="relative bg-gradient-to-br from-emerald-600/20 to-green-700/10 border border-emerald-500/40 rounded-xl px-5 py-3 text-center min-w-[120px] backdrop-blur-xl hover:border-emerald-500/60 transition-all">
+                  <div className="text-2xl font-black text-emerald-300">{arabCount}</div>
+                  <div className="text-xs text-emerald-200/70 font-semibold">دولة عربية</div>
+                </div>
               </div>
-              <div className="bg-gradient-to-br from-red-500/20 to-red-600/5 border border-red-500/30 rounded-2xl px-5 py-3 text-center min-w-[100px]">
-                <div className="text-3xl font-black text-red-400">{nuclearCount}</div>
-                <div className="text-xs text-red-300/70">قوة نووية</div>
+
+              <div className="group relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-rose-600 rounded-xl blur-lg opacity-40 group-hover:opacity-60 transition-all"></div>
+                <div className="relative bg-gradient-to-br from-red-600/20 to-rose-700/10 border border-red-500/40 rounded-xl px-5 py-3 text-center min-w-[120px] backdrop-blur-xl hover:border-red-500/60 transition-all">
+                  <div className="text-2xl font-black text-red-300">{nuclearCount}</div>
+                  <div className="text-xs text-red-200/70 font-semibold">قوة نووية</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+        {/* Bottom Accent Line */}
+        <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent"></div>
       </header>
 
       <main className="relative z-10 max-w-7xl mx-auto px-4 py-8">
