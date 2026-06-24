@@ -181,10 +181,26 @@ export default function CountryDetail({ country, onBack, isFavorite = false, onT
               {country.rivers.map((river, i) => (
                 <div key={i} className="flex items-center gap-3 bg-blue-500/10 rounded-lg p-3 border border-blue-500/20">
                   <span className="text-blue-400">🌊</span>
-                  <span className="text-white">{river}</span>
+                  <div>
+                    <span className="text-white">{river}</span>
+                  </div>
                 </div>
               ))}
             </div>
+            {country.riverDetails && country.riverDetails.length > 0 && (
+              <div className="mt-4 space-y-3">
+                {country.riverDetails.map((r, i) => (
+                  <div key={i} className="bg-blue-500/5 border border-blue-500/15 rounded-xl p-4">
+                    <h4 className="text-blue-300 font-bold text-lg">{r.nameAr}</h4>
+                    <p className="text-gray-400 text-xs mt-1">{r.name}</p>
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      <span className="text-xs bg-blue-500/20 px-2 py-0.5 rounded text-blue-300">الطول: {r.length}</span>
+                    </div>
+                    <p className="text-gray-300 text-sm mt-2 leading-relaxed">{r.description}</p>
+                  </div>
+                ))}
+              </div>
+            )}
           </Section>
 
           <Section title="💧 البحيرات" color="sky">
@@ -192,12 +208,41 @@ export default function CountryDetail({ country, onBack, isFavorite = false, onT
               {country.lakes.map((lake, i) => (
                 <div key={i} className="flex items-center gap-3 bg-sky-500/10 rounded-lg p-3 border border-sky-500/20">
                   <span className="text-sky-400">💎</span>
-                  <span className="text-white">{lake}</span>
+                  <div>
+                    <span className="text-white">{lake}</span>
+                  </div>
                 </div>
               ))}
             </div>
+            {country.lakeDetails && country.lakeDetails.length > 0 && (
+              <div className="mt-4 space-y-3">
+                {country.lakeDetails.map((l, i) => (
+                  <div key={i} className="bg-sky-500/5 border border-sky-500/15 rounded-xl p-4">
+                    <h4 className="text-sky-300 font-bold text-lg">{l.nameAr}</h4>
+                    <p className="text-gray-400 text-xs mt-1">{l.name}</p>
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      <span className="text-xs bg-sky-500/20 px-2 py-0.5 rounded text-sky-300">المساحة: {l.area}</span>
+                    </div>
+                    <p className="text-gray-300 text-sm mt-2 leading-relaxed">{l.description}</p>
+                  </div>
+                ))}
+              </div>
+            )}
           </Section>
         </div>
+
+        {/* Bordering Seas */}
+        {country.borderingSeas && country.borderingSeas.length > 0 && (
+          <Section title="🌊 البحار والمحيطات المطلة" color="blue">
+            <div className="flex flex-wrap gap-2">
+              {country.borderingSeas.map((sea, i) => (
+                <span key={i} className="px-3 py-1.5 bg-blue-500/10 border border-blue-500/30 rounded-lg text-blue-300 text-sm">
+                  🌊 {sea}
+                </span>
+              ))}
+            </div>
+          </Section>
+        )}
 
         {/* Landmarks */}
         <Section title="🏛 أهم المعالم" color="orange">
@@ -209,6 +254,25 @@ export default function CountryDetail({ country, onBack, isFavorite = false, onT
               </div>
             ))}
           </div>
+          {country.landmarkDetails && country.landmarkDetails.length > 0 && (
+            <div className="mt-6 space-y-4">
+              {country.landmarkDetails.map((lm, i) => (
+                <div key={i} className="bg-orange-500/5 border border-orange-500/15 rounded-xl p-5">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">🏛</span>
+                    <div className="flex-1">
+                      <h4 className="text-orange-300 font-bold text-lg">{lm.nameAr}</h4>
+                      <p className="text-gray-400 text-xs">{lm.name}</p>
+                      <div className="flex flex-wrap gap-2 mt-2">
+                        <span className="text-xs bg-orange-500/20 px-2 py-0.5 rounded text-orange-300">النوع: {lm.type}</span>
+                      </div>
+                      <p className="text-gray-300 text-sm mt-2 leading-relaxed">{lm.description}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
         </Section>
 
         {/* News */}
@@ -355,6 +419,55 @@ export default function CountryDetail({ country, onBack, isFavorite = false, onT
                 <span key={i} className="px-3 py-1.5 bg-amber-500/10 border border-amber-500/30 rounded-lg text-amber-300 text-sm">
                   {r}
                 </span>
+              ))}
+            </div>
+          </Section>
+        )}
+
+        {/* Leader Children */}
+        {country.leaderChildren && country.leaderChildren.length > 0 && (
+          <Section title="👨‍👩‍👧‍👦 أبناء رئيس الدولة" color="purple">
+            <div className="flex flex-wrap gap-3">
+              {country.leaderChildren.map((child, i) => (
+                <span key={i} className="px-4 py-2 bg-purple-500/10 border border-purple-500/30 rounded-xl text-white">
+                  {child}
+                </span>
+              ))}
+            </div>
+          </Section>
+        )}
+
+        {/* Previous Leaders */}
+        {country.previousLeaders && country.previousLeaders.length > 0 && (
+          <Section title="📜 الرؤساء والحكام السابقون" color="amber">
+            <div className="space-y-3">
+              {country.previousLeaders.map((pl, i) => (
+                <div key={i} className="bg-amber-500/5 border border-amber-500/15 rounded-xl p-4">
+                  <div className="flex items-start justify-between">
+                    <div>
+                      <h4 className="text-amber-300 font-bold text-lg">{pl.nameAr}</h4>
+                      <p className="text-gray-400 text-xs">{pl.name}</p>
+                    </div>
+                    <span className="text-xs bg-amber-500/20 px-2 py-1 rounded text-amber-300">{pl.title}</span>
+                  </div>
+                  <p className="text-gray-300 text-sm mt-2">من {pl.from} إلى {pl.to}</p>
+                </div>
+              ))}
+            </div>
+          </Section>
+        )}
+
+        {/* Celebrities */}
+        {country.celebrities && country.celebrities.length > 0 && (
+          <Section title="🌟 مشاهير ونجوم" color="rose">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {country.celebrities.map((cel, i) => (
+                <div key={i} className="bg-rose-500/5 border border-rose-500/15 rounded-xl p-4">
+                  <h4 className="text-rose-300 font-bold">{cel.nameAr}</h4>
+                  <p className="text-gray-400 text-xs">{cel.name}</p>
+                  <span className="inline-block mt-2 text-xs bg-rose-500/20 px-2 py-0.5 rounded text-rose-300">{cel.profession}</span>
+                  <p className="text-gray-300 text-xs mt-2 leading-relaxed">{cel.knownFor}</p>
+                </div>
               ))}
             </div>
           </Section>

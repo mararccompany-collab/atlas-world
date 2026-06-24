@@ -32,6 +32,42 @@ export interface Province {
   capital: string;
 }
 
+export interface LandmarkDetail {
+  name: string;
+  nameAr: string;
+  type: string;
+  description: string;
+}
+
+export interface RiverDetail {
+  name: string;
+  nameAr: string;
+  length: string;
+  description: string;
+}
+
+export interface LakeDetail {
+  name: string;
+  nameAr: string;
+  area: string;
+  description: string;
+}
+
+export interface Celebrity {
+  name: string;
+  nameAr: string;
+  profession: string;
+  knownFor: string;
+}
+
+export interface PreviousLeader {
+  name: string;
+  nameAr: string;
+  title: string;
+  from: string;
+  to: string;
+}
+
 export interface Country {
   id: string;
   name: string;
@@ -75,6 +111,13 @@ export interface Country {
   nationalAnimal?: string;
   airportCount?: string;
   unescoSites?: string;
+  landmarkDetails?: LandmarkDetail[];
+  riverDetails?: RiverDetail[];
+  lakeDetails?: LakeDetail[];
+  borderingSeas?: string[];
+  celebrities?: Celebrity[];
+  previousLeaders?: PreviousLeader[];
+  leaderChildren?: string[];
 }
 
 export const countries: Country[] = [
