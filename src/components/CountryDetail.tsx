@@ -1,0 +1,292 @@
+import { Country } from '../data/countries';
+
+interface CountryDetailProps {
+  country: Country;
+  onBack: () => void;
+}
+
+export default function CountryDetail({ country, onBack }: CountryDetailProps) {
+  return (
+    <div className="min-h-screen pb-12">
+      {/* Header */}
+      <div className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-amber-900/30 via-gray-900 to-gray-950" />
+        <div className="relative max-w-7xl mx-auto px-4 py-8">
+          <button
+            onClick={onBack}
+            className="flex items-center gap-2 text-amber-400 hover:text-amber-300 transition-colors mb-6 group"
+          >
+            <svg className="w-5 h-5 rotate-180 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+            <span>العودة للقائمة</span>
+          </button>
+
+          <div className="flex flex-col md:flex-row items-start gap-6">
+            <div className="text-8xl md:text-9xl">{country.flag}</div>
+            <div>
+              <h1 className="text-4xl md:text-5xl font-black text-white">{country.nameAr}</h1>
+              <p className="text-xl text-gray-400 mt-1">{country.name}</p>
+              <div className="flex flex-wrap gap-3 mt-4">
+                <span className="px-4 py-1.5 rounded-full bg-amber-500/20 text-amber-400 border border-amber-500/40 text-sm font-medium">
+                  🏛 العاصمة: {country.capitalAr}
+                </span>
+                <span className="px-4 py-1.5 rounded-full bg-blue-500/20 text-blue-400 border border-blue-500/40 text-sm font-medium">
+                  👥 السكان: {country.population}
+                </span>
+                <span className="px-4 py-1.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 text-sm font-medium">
+                  📐 المساحة: {country.area}
+                </span>
+                <span className="px-4 py-1.5 rounded-full bg-purple-500/20 text-purple-400 border border-purple-500/40 text-sm font-medium">
+                  🗣 اللغة: {country.language}
+                </span>
+                {country.isArab && (
+                  <span className="px-4 py-1.5 rounded-full bg-green-500/20 text-green-400 border border-green-500/40 text-sm font-medium">
+                    🌙 دولة عربية
+                  </span>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 mt-8 space-y-8">
+        {/* Location */}
+        <Section title="📍 الموقع الجغرافي" color="amber">
+          <p className="text-gray-300 text-lg leading-relaxed">{country.location}</p>
+        </Section>
+
+        {/* Leader */}
+        <Section title="👑 رئيس الدولة" color="purple">
+          <div className="bg-gradient-to-r from-purple-500/10 to-transparent rounded-xl p-6 border border-purple-500/20">
+            <h3 className="text-2xl font-bold text-white">{country.leader.nameAr}</h3>
+            <p className="text-purple-400 text-sm mt-1">{country.leader.name}</p>
+            <div className="flex flex-wrap gap-3 mt-3">
+              <span className="text-sm bg-purple-500/20 px-3 py-1 rounded-full text-purple-300">
+                {country.leader.title}
+              </span>
+              <span className="text-sm bg-purple-500/20 px-3 py-1 rounded-full text-purple-300">
+                منذ {country.leader.since}
+              </span>
+            </div>
+            <p className="text-gray-300 mt-4 leading-relaxed">{country.leader.bio}</p>
+          </div>
+        </Section>
+
+        {/* Military */}
+        <Section title="⚔️ القوة العسكرية" color="red">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-6">
+            {country.military.rank > 0 && (
+              <StatBox label="الترتيب العالمي" value={`#${country.military.rank}`} color="red" />
+            )}
+            <StatBox label="القوام البشري" value={country.military.personnel} color="red" />
+            <StatBox label="الميزانية" value={country.military.budget} color="red" />
+            <StatBox label="الدبابات" value={country.military.tanks} color="red" />
+            <StatBox label="الطائرات" value={country.military.aircraft} color="red" />
+            <StatBox label="القوة البحرية" value={country.military.navy} color="red" />
+          </div>
+          {country.military.nuclear && (
+            <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-4 mb-4 flex items-center gap-3">
+              <span className="text-3xl">☢️</span>
+              <span className="text-red-400 font-bold text-lg">تمتلك أسلحة نووية</span>
+            </div>
+          )}
+          <p className="text-gray-300 leading-relaxed">{country.military.details}</p>
+        </Section>
+
+        {/* Economy */}
+        <Section title="💰 الاقتصاد" color="emerald">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <StatBox label="الناتج المحلي" value={country.economy.gdp} color="emerald" />
+            <StatBox label="نصيب الفرد" value={country.economy.gdpPerCapita} color="emerald" />
+            <StatBox label="العملة" value={country.economy.currency} color="emerald" />
+          </div>
+          <div className="mb-6">
+            <h4 className="text-emerald-400 font-bold mb-3">القطاعات الرئيسية:</h4>
+            <div className="flex flex-wrap gap-2">
+              {country.economy.mainSectors.map((sector, i) => (
+                <span key={i} className="px-3 py-1.5 bg-emerald-500/15 text-emerald-300 rounded-full text-sm border border-emerald-500/30">
+                  {sector}
+                </span>
+              ))}
+            </div>
+          </div>
+          <div className="mb-6">
+            <h4 className="text-emerald-400 font-bold mb-3">🏦 أهم البنوك:</h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+              {country.economy.banks.map((bank, i) => (
+                <div key={i} className="bg-emerald-500/10 border border-emerald-500/20 rounded-lg p-3 text-center">
+                  <span className="text-white font-medium">{bank}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <p className="text-gray-300 leading-relaxed">{country.economy.details}</p>
+        </Section>
+
+        {/* Politicians */}
+        {country.politicians.length > 0 && (
+          <Section title="🏛 أهم السياسيين" color="blue">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {country.politicians.map((pol, i) => (
+                <div key={i} className="bg-blue-500/10 border border-blue-500/20 rounded-xl p-4 flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-blue-500/30 flex items-center justify-center text-blue-300 font-bold">
+                    {i + 1}
+                  </div>
+                  <span className="text-white font-medium">{pol}</span>
+                </div>
+              ))}
+            </div>
+          </Section>
+        )}
+
+        {/* Provinces */}
+        <Section title="🗺 المحافظات والمناطق" color="cyan">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {country.provinces.map((prov, i) => (
+              <div key={i} className="bg-cyan-500/10 border border-cyan-500/20 rounded-xl p-4">
+                <h4 className="text-cyan-300 font-bold text-lg">{prov.name}</h4>
+                <div className="mt-2 space-y-1 text-sm">
+                  <p className="text-gray-400">العاصمة: <span className="text-white">{prov.capital}</span></p>
+                  <p className="text-gray-400">السكان: <span className="text-white">{prov.population}</span></p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </Section>
+
+        {/* Rivers & Lakes */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <Section title="🏞 الأنهار" color="blue">
+            <div className="space-y-2">
+              {country.rivers.map((river, i) => (
+                <div key={i} className="flex items-center gap-3 bg-blue-500/10 rounded-lg p-3 border border-blue-500/20">
+                  <span className="text-blue-400">🌊</span>
+                  <span className="text-white">{river}</span>
+                </div>
+              ))}
+            </div>
+          </Section>
+
+          <Section title="💧 البحيرات" color="sky">
+            <div className="space-y-2">
+              {country.lakes.map((lake, i) => (
+                <div key={i} className="flex items-center gap-3 bg-sky-500/10 rounded-lg p-3 border border-sky-500/20">
+                  <span className="text-sky-400">💎</span>
+                  <span className="text-white">{lake}</span>
+                </div>
+              ))}
+            </div>
+          </Section>
+        </div>
+
+        {/* Landmarks */}
+        <Section title="🏛 أهم المعالم" color="orange">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {country.landmarks.map((landmark, i) => (
+              <div key={i} className="bg-orange-500/10 border border-orange-500/20 rounded-xl p-4 text-center hover:bg-orange-500/20 transition-colors">
+                <span className="text-2xl mb-2 block">🏛</span>
+                <span className="text-white font-medium">{landmark}</span>
+              </div>
+            ))}
+          </div>
+        </Section>
+
+        {/* News */}
+        <Section title="📰 آخر الأخبار" color="rose">
+          <div className="bg-rose-500/10 border border-rose-500/20 rounded-xl p-6 text-center">
+            <p className="text-gray-300 mb-4">للاطلاع على آخر الأخبار المباشرة عن {country.nameAr}</p>
+            <a
+              href={`https://news.google.com/search?q=${encodeURIComponent(country.newsKeywords)}&hl=ar`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-rose-500 hover:bg-rose-600 text-white rounded-xl transition-colors font-bold"
+            >
+              <span>📰</span>
+              <span>أخبار مباشرة - Google News</span>
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+            <div className="mt-4 flex flex-wrap justify-center gap-3">
+              <a
+                href={`https://www.aljazeera.net/search/${encodeURIComponent(country.nameAr)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg text-sm transition-colors"
+              >
+                الجزيرة نت
+              </a>
+              <a
+                href={`https://www.bbc.com/arabic/search?q=${encodeURIComponent(country.nameAr)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg text-sm transition-colors"
+              >
+                BBC عربي
+              </a>
+              <a
+                href={`https://www.reuters.com/search/news?query=${encodeURIComponent(country.newsKeywords)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg text-sm transition-colors"
+              >
+                Reuters
+              </a>
+            </div>
+          </div>
+        </Section>
+      </div>
+    </div>
+  );
+}
+
+function Section({ title, color, children }: { title: string; color: string; children: React.ReactNode }) {
+  const borderColors: Record<string, string> = {
+    amber: 'border-amber-500/30',
+    purple: 'border-purple-500/30',
+    red: 'border-red-500/30',
+    emerald: 'border-emerald-500/30',
+    blue: 'border-blue-500/30',
+    cyan: 'border-cyan-500/30',
+    sky: 'border-sky-500/30',
+    orange: 'border-orange-500/30',
+    rose: 'border-rose-500/30',
+  };
+
+  const titleColors: Record<string, string> = {
+    amber: 'text-amber-400',
+    purple: 'text-purple-400',
+    red: 'text-red-400',
+    emerald: 'text-emerald-400',
+    blue: 'text-blue-400',
+    cyan: 'text-cyan-400',
+    sky: 'text-sky-400',
+    orange: 'text-orange-400',
+    rose: 'text-rose-400',
+  };
+
+  return (
+    <div className={`bg-gray-900/60 backdrop-blur-lg border ${borderColors[color] || 'border-gray-700/50'} rounded-2xl p-6`}>
+      <h2 className={`text-2xl font-black ${titleColors[color] || 'text-white'} mb-5 flex items-center gap-2`}>
+        {title}
+      </h2>
+      {children}
+    </div>
+  );
+}
+
+function StatBox({ label, value, color }: { label: string; value: string; color: string }) {
+  const bgColors: Record<string, string> = {
+    red: 'bg-red-500/10 border-red-500/20',
+    emerald: 'bg-emerald-500/10 border-emerald-500/20',
+  };
+
+  return (
+    <div className={`${bgColors[color] || 'bg-gray-800/60 border-gray-700/30'} border rounded-xl p-4 text-center`}>
+      <div className="text-xs text-gray-400 mb-1">{label}</div>
+      <div className="text-white font-bold text-sm">{value}</div>
+    </div>
+  );
+}
