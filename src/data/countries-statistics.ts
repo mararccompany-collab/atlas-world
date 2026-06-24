@@ -25,6 +25,14 @@ export const statisticsData: Record<string, Partial<Country>> = {
     coastline: '2,640 km',
     highestPoint: 'جبل السودة 3,133 م',
     lowestPoint: 'الخليج العربي 0 م',
+
+    paramilitaryPersonnel: '100,000',
+    youthUnemploymentRate: '28.8%',
+    tourismRevenue: '36 مليار $',
+    gdpRate: '2.5%',
+    publicDebt: '24% من الناتج المحلي',
+    foreignReserves: '466 مليار $',
+
   },
   ae: {
     mountains: [
@@ -48,6 +56,14 @@ export const statisticsData: Record<string, Partial<Country>> = {
     coastline: '1,318 km',
     highestPoint: 'جبل جيس 1,910 م',
     lowestPoint: 'الخليج العربي 0 م',
+
+    paramilitaryPersonnel: '12,000',
+    youthUnemploymentRate: '12.1%',
+    tourismRevenue: '48 مليار $',
+    gdpRate: '3.8%',
+    publicDebt: '35% من الناتج المحلي',
+    foreignReserves: '155 مليار $',
+
   },
   eg: {
     mountains: [
@@ -77,6 +93,14 @@ export const statisticsData: Record<string, Partial<Country>> = {
     mainCrops: ['القطن', 'القمح', 'الأرز', 'الذرة', 'قصب السكر', 'الفواكه', 'الخضروات'],
     suezCanalRevenue: '9.4 مليار $ سنوياً',
     remittances: '32 مليار $ سنوياً (تحويلات المصريين بالخارج)',
+
+    paramilitaryPersonnel: '397,000',
+    youthUnemploymentRate: '32.1%',
+    tourismRevenue: '13.6 مليار $',
+    gdpRate: '5.8%',
+    publicDebt: '88% من الناتج المحلي',
+    foreignReserves: '44.1 مليار $',
+
   },
   iq: {
     mountains: [
@@ -101,6 +125,14 @@ export const statisticsData: Record<string, Partial<Country>> = {
     coastline: '58 km',
     highestPoint: 'شيخا دار 3,611 م',
     lowestPoint: 'الخليج العربي 0 م',
+
+    paramilitaryPersonnel: '145,000',
+    youthUnemploymentRate: '36.2%',
+    tourismRevenue: '2.5 مليار $',
+    gdpRate: '4.8%',
+    publicDebt: '48% من الناتج المحلي',
+    foreignReserves: '98 مليار $',
+
   },
   jo: {
     mountains: [
@@ -125,6 +157,14 @@ export const statisticsData: Record<string, Partial<Country>> = {
     coastline: '26 km',
     highestPoint: 'جبل أم الدامي 1,854 م',
     lowestPoint: 'البحر الميت -431 م',
+
+    paramilitaryPersonnel: '15,000',
+    youthUnemploymentRate: '38.5%',
+    tourismRevenue: '5.8 مليار $',
+    gdpRate: '2.2%',
+    publicDebt: '95% من الناتج المحلي',
+    foreignReserves: '18.2 مليار $',
+
   },
   lb: {
     mountains: [
@@ -149,6 +189,14 @@ export const statisticsData: Record<string, Partial<Country>> = {
     coastline: '225 km',
     highestPoint: 'قنة القرنة السوداء 3,088 م',
     lowestPoint: 'البحر الأبيض المتوسط 0 م',
+
+    paramilitaryPersonnel: '8,000',
+    youthUnemploymentRate: '35.7%',
+    tourismRevenue: '6.7 مليار $',
+    gdpRate: '2.0%',
+    publicDebt: '172% من الناتج المحلي',
+    foreignReserves: '35 مليار $',
+
   },
   sy: {
     mountains: [
@@ -173,6 +221,14 @@ export const statisticsData: Record<string, Partial<Country>> = {
     coastline: '193 km',
     highestPoint: 'جبل الشيخ 2,814 م',
     lowestPoint: 'البحر الأبيض المتوسط 0 م',
+
+    paramilitaryPersonnel: '100,000',
+    youthUnemploymentRate: '40.5%',
+    tourismRevenue: '0.8 مليار $',
+    gdpRate: '1.5%',
+    publicDebt: '65% من الناتج المحلي',
+    foreignReserves: '2.5 مليار $',
+
   },
   kw: {
     mountains: [],
@@ -193,6 +249,14 @@ export const statisticsData: Record<string, Partial<Country>> = {
     coastline: '499 km',
     highestPoint: 'الخليج العربي 0 م',
     lowestPoint: 'الخليج العربي 0 م',
+
+    paramilitaryPersonnel: '26,000',
+    youthUnemploymentRate: '18.4%',
+    tourismRevenue: '5.2 مليار $',
+    gdpRate: '2.8%',
+    publicDebt: '18% من الناتج المحلي',
+    foreignReserves: '53 مليار $',
+
   },
   qa: {
     mountains: [
@@ -215,6 +279,14 @@ export const statisticsData: Record<string, Partial<Country>> = {
     coastline: '563 km',
     highestPoint: 'الخليج العربي 0 م',
     lowestPoint: 'الخليج العربي 0 م',
+
+    paramilitaryPersonnel: '15,000',
+    youthUnemploymentRate: '8.5%',
+    tourismRevenue: '12.5 مليار $',
+    gdpRate: '4.1%',
+    publicDebt: '45% من الناتج المحلي',
+    foreignReserves: '55 مليار $',
+
   },
   bh: {
     mountains: [
@@ -237,6 +309,14 @@ export const statisticsData: Record<string, Partial<Country>> = {
     coastline: '161 km',
     highestPoint: 'جبل الدخان 134 م',
     lowestPoint: 'الخليج العربي 0 م',
+
+    paramilitaryPersonnel: '11,000',
+    youthUnemploymentRate: '25.3%',
+    tourismRevenue: '3.2 مليار $',
+    gdpRate: '3.5%',
+    publicDebt: '102% من الناتج المحلي',
+    foreignReserves: '4.8 مليار $',
+
   },
   om: {
     mountains: [
@@ -261,6 +341,14 @@ export const statisticsData: Record<string, Partial<Country>> = {
     coastline: '2,092 km',
     highestPoint: 'جبل شمس 3,009 م',
     lowestPoint: 'بحر العرب 0 م',
+
+    paramilitaryPersonnel: '20,000',
+    youthUnemploymentRate: '28.3%',
+    tourismRevenue: '2.8 مليار $',
+    gdpRate: '3.2%',
+    publicDebt: '40% من الناتج المحلي',
+    foreignReserves: '20 مليار $',
+
   },
   ye: {
     mountains: [
@@ -285,6 +373,14 @@ export const statisticsData: Record<string, Partial<Country>> = {
     coastline: '1,906 km',
     highestPoint: 'جبل النبي شعيب 3,666 م',
     lowestPoint: 'بحر العرب 0 م',
+
+    paramilitaryPersonnel: '120,000',
+    youthUnemploymentRate: '42.5%',
+    tourismRevenue: '0.3 مليار $',
+    gdpRate: '0.5%',
+    publicDebt: '68% من الناتج المحلي',
+    foreignReserves: '1.2 مليار $',
+
   },
   ly: {
     mountains: [
@@ -309,6 +405,14 @@ export const statisticsData: Record<string, Partial<Country>> = {
     coastline: '1,770 km',
     highestPoint: 'بيكو بيانكو 2,267 م',
     lowestPoint: 'منخفض سبخة غزيل -47 م',
+
+    paramilitaryPersonnel: '55,000',
+    youthUnemploymentRate: '38.2%',
+    tourismRevenue: '0.5 مليار $',
+    gdpRate: '3.2%',
+    publicDebt: '55% من الناتج المحلي',
+    foreignReserves: '82 مليار $',
+
   },
   tn: {
     mountains: [
@@ -333,6 +437,14 @@ export const statisticsData: Record<string, Partial<Country>> = {
     coastline: '1,148 km',
     highestPoint: 'جبل الشعانبي 1,544 م',
     lowestPoint: 'خليج قابس 0 م',
+
+    paramilitaryPersonnel: '12,000',
+    youthUnemploymentRate: '36.8%',
+    tourismRevenue: '3.8 مليار $',
+    gdpRate: '2.5%',
+    publicDebt: '78% من الناتج المحلي',
+    foreignReserves: '9.5 مليار $',
+
   },
   dz: {
     mountains: [
@@ -357,6 +469,14 @@ export const statisticsData: Record<string, Partial<Country>> = {
     coastline: '1,622 km',
     highestPoint: 'جبل تاهات 3,003 م',
     lowestPoint: 'شط ملغيغ -40 م',
+
+    paramilitaryPersonnel: '150,000',
+    youthUnemploymentRate: '29.8%',
+    tourismRevenue: '1.2 مليار $',
+    gdpRate: '3.8%',
+    publicDebt: '52% من الناتج المحلي',
+    foreignReserves: '68 مليار $',
+
   },
   ma: {
     mountains: [
@@ -381,6 +501,14 @@ export const statisticsData: Record<string, Partial<Country>> = {
     coastline: '1,835 km',
     highestPoint: 'جبل توبقال 4,167 م',
     lowestPoint: 'البحر الأبيض المتوسط 0 م',
+
+    paramilitaryPersonnel: '50,000',
+    youthUnemploymentRate: '28.5%',
+    tourismRevenue: '10.5 مليار $',
+    gdpRate: '3.5%',
+    publicDebt: '68% من الناتج المحلي',
+    foreignReserves: '36 مليار $',
+
   },
   sd: {
     mountains: [
@@ -405,6 +533,14 @@ export const statisticsData: Record<string, Partial<Country>> = {
     coastline: '853 km',
     highestPoint: 'جبل مرة 3,042 م',
     lowestPoint: 'البحر الأحمر 0 م',
+
+    paramilitaryPersonnel: '75,000',
+    youthUnemploymentRate: '35.2%',
+    tourismRevenue: '0.9 مليار $',
+    gdpRate: '2.2%',
+    publicDebt: '185% من الناتج المحلي',
+    foreignReserves: '0.5 مليار $',
+
   },
   mr: {
     mountains: [
@@ -429,6 +565,14 @@ export const statisticsData: Record<string, Partial<Country>> = {
     coastline: '754 km',
     highestPoint: 'كدية الجل 915 م',
     lowestPoint: 'سبخة تشيت -5 م',
+
+    paramilitaryPersonnel: '5,000',
+    youthUnemploymentRate: '32.8%',
+    tourismRevenue: '0.2 مليار $',
+    gdpRate: '4.5%',
+    publicDebt: '55% من الناتج المحلي',
+    foreignReserves: '1.5 مليار $',
+
   },
   so: {
     mountains: [
@@ -453,6 +597,14 @@ export const statisticsData: Record<string, Partial<Country>> = {
     coastline: '3,025 km',
     highestPoint: 'شيمبيريس 2,460 م',
     lowestPoint: 'المحيط الهندي 0 م',
+
+    paramilitaryPersonnel: '25,000',
+    youthUnemploymentRate: '45.8%',
+    tourismRevenue: '0.1 مليار $',
+    gdpRate: '3.2%',
+    publicDebt: '72% من الناتج المحلي',
+    foreignReserves: '0.3 مليار $',
+
   },
   dj: {
     mountains: [
@@ -477,6 +629,14 @@ export const statisticsData: Record<string, Partial<Country>> = {
     coastline: '314 km',
     highestPoint: 'جبل موسى علي 2,028 م',
     lowestPoint: 'بحيرة عسل -155 م',
+
+    paramilitaryPersonnel: '2,000',
+    youthUnemploymentRate: '40.5%',
+    tourismRevenue: '0.05 مليار $',
+    gdpRate: '5.8%',
+    publicDebt: '46% من الناتج المحلي',
+    foreignReserves: '0.8 مليار $',
+
   },
   km: {
     mountains: [
@@ -500,6 +660,14 @@ export const statisticsData: Record<string, Partial<Country>> = {
     coastline: '340 km',
     highestPoint: 'جبل كارتالا 2,361 م',
     lowestPoint: 'المحيط الهندي 0 م',
+
+    paramilitaryPersonnel: '500',
+    youthUnemploymentRate: '38.5%',
+    tourismRevenue: '0.03 مليار $',
+    gdpRate: '2.8%',
+    publicDebt: '32% من الناتج المحلي',
+    foreignReserves: '0.2 مليار $',
+
   },
   ps: {
     mountains: [
@@ -523,6 +691,14 @@ export const statisticsData: Record<string, Partial<Country>> = {
     coastline: '0 km',
     highestPoint: 'جبل النبي يونس 1,030 م',
     lowestPoint: 'البحر الميت -431 م',
+
+    paramilitaryPersonnel: '0',
+    youthUnemploymentRate: '50.2%',
+    tourismRevenue: '0.5 مليار $',
+    gdpRate: '3.0%',
+    publicDebt: '48% من الناتج المحلي',
+    foreignReserves: '0.6 مليار $',
+
   },
   us: {
     mountains: [
