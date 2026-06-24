@@ -359,6 +359,40 @@ export default function CountryDetail({ country, onBack, isFavorite = false, onT
             </div>
           </Section>
         )}
+
+        {/* New Details Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {country.governmentType && (
+            <Section title="🏛 نظام الحكم" color="purple">
+              <p className="text-gray-300 text-lg">{country.governmentType}</p>
+            </Section>
+          )}
+          {country.drivingSide && (
+            <Section title="🚗 جهة القيادة" color="blue">
+              <p className="text-gray-300 text-lg">{country.drivingSide}</p>
+            </Section>
+          )}
+          {country.nationalDish && (
+            <Section title="🍜 الطبق الوطني" color="orange">
+              <p className="text-gray-300 text-lg">{country.nationalDish}</p>
+            </Section>
+          )}
+          {country.nationalAnimal && (
+            <Section title="🦁 الحيوان الوطني" color="emerald">
+              <p className="text-gray-300 text-lg">{country.nationalAnimal}</p>
+            </Section>
+          )}
+          {country.airportCount && (
+            <Section title="✈️ عدد المطارات" color="cyan">
+              <p className="text-gray-300 text-lg">{country.airportCount}</p>
+            </Section>
+          )}
+          {country.unescoSites && (
+            <Section title="🏛 مواقع اليونسكو" color="amber">
+              <p className="text-gray-300 text-lg">{country.unescoSites}</p>
+            </Section>
+          )}
+        </div>
       </div>
     </div>
   );
