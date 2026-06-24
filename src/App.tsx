@@ -7,6 +7,7 @@ import CountryListItem from './components/CountryListItem';
 import AdvancedStats from './components/AdvancedStats';
 import CompareCountries from './components/CompareCountries';
 import Favorites from './components/Favorites';
+import WarGame from './components/WarGame';
 
 export default function App() {
   const [search, setSearch] = useState('');
@@ -19,6 +20,7 @@ export default function App() {
   const [showAdvancedStats, setShowAdvancedStats] = useState(false);
   const [showCompare, setShowCompare] = useState(false);
   const [showFavorites, setShowFavorites] = useState(false);
+  const [showWarGame, setShowWarGame] = useState(false);
   const [favorites, setFavorites] = useState<Country[]>(() => {
     const saved = localStorage.getItem('favorites');
     return saved ? JSON.parse(saved) : [];
@@ -195,6 +197,10 @@ export default function App() {
     );
   }
 
+  if (showWarGame) {
+    return <WarGame onClose={() => setShowWarGame(false)} />;
+  }
+
   const arabCount = countries.filter(c => c.isArab).length;
   const nuclearCount = countries.filter(c => c.military.nuclear).length;
 
@@ -225,7 +231,7 @@ export default function App() {
             {/* Left: Logo & Title */}
             <div className="flex items-center gap-6">
               <div className="relative">
-                <div className="text-7xl animate-bounce-slow">🌍</div>
+                <div className="text-7xl animate-[spin_8s_linear_infinite]">🌍</div>
                 <div className="absolute -inset-6 bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 rounded-full blur-3xl opacity-30 animate-pulse"></div>
               </div>
               <div className="space-y-1">
@@ -385,7 +391,13 @@ export default function App() {
             </div>
 
             {/* الأزرار الجديدة */}
-            <div className="flex gap-2 ml-auto">
+            <div className="flex gap-2">
+              <button
+                onClick={() => setShowWarGame(true)}
+                className="px-4 py-2 rounded-lg bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/50 text-red-400 hover:border-red-500 transition-all font-semibold text-sm"
+              >
+                ⚔️ المحاكي
+              </button>
               <button
                 onClick={() => setShowAdvancedStats(true)}
                 className="px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border border-cyan-500/50 text-cyan-400 hover:border-cyan-500 transition-all font-semibold text-sm"

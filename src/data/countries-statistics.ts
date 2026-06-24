@@ -19,6 +19,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '45.9',
     internetUsers: '98%',
     hdiRank: '35',
+    unemploymentRate: '5.6%',
+    inflationRate: '2.3%',
+    tourismArrivals: '20,234,000',
+    coastline: '2,640 km',
+    highestPoint: 'جبل السودة 3,133 م',
+    lowestPoint: 'الخليج العربي 0 م',
   },
   ae: {
     mountains: [
@@ -36,6 +42,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '32.5',
     internetUsers: '99%',
     hdiRank: '26',
+    unemploymentRate: '2.8%',
+    inflationRate: '1.9%',
+    tourismArrivals: '22,000,000',
+    coastline: '1,318 km',
+    highestPoint: 'جبل جيس 1,910 م',
+    lowestPoint: 'الخليج العربي 0 م',
   },
   eg: {
     mountains: [
@@ -54,6 +66,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '31.5',
     internetUsers: '72%',
     hdiRank: '105',
+    unemploymentRate: '7.3%',
+    inflationRate: '5.8%',
+    tourismArrivals: '13,000,000',
+    coastline: '2,450 km',
+    highestPoint: 'جبل كاترين 2,629 م',
+    lowestPoint: 'منخفض القطارة -133 م',
   },
   iq: {
     mountains: [
@@ -72,6 +90,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '29.5',
     internetUsers: '78%',
     hdiRank: '121',
+    unemploymentRate: '14.2%',
+    inflationRate: '4.5%',
+    tourismArrivals: '1,500,000',
+    coastline: '58 km',
+    highestPoint: 'شيخا دار 3,611 م',
+    lowestPoint: 'الخليج العربي 0 م',
   },
   jo: {
     mountains: [
@@ -90,6 +114,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '33.7',
     internetUsers: '87%',
     hdiRank: '99',
+    unemploymentRate: '19.1%',
+    inflationRate: '2.8%',
+    tourismArrivals: '5,300,000',
+    coastline: '26 km',
+    highestPoint: 'جبل أم الدامي 1,854 م',
+    lowestPoint: 'البحر الميت -431 م',
   },
   lb: {
     mountains: [
@@ -108,6 +138,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '31.8',
     internetUsers: '86%',
     hdiRank: '109',
+    unemploymentRate: '11.5%',
+    inflationRate: '4.2%',
+    tourismArrivals: '2,000,000',
+    coastline: '225 km',
+    highestPoint: 'قنة القرنة السوداء 3,088 م',
+    lowestPoint: 'البحر الأبيض المتوسط 0 م',
   },
   sy: {
     mountains: [
@@ -126,6 +162,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '35.8',
     internetUsers: '51%',
     hdiRank: '150',
+    unemploymentRate: '12.3%',
+    inflationRate: '5.5%',
+    tourismArrivals: '2,500,000',
+    coastline: '193 km',
+    highestPoint: 'جبل الشيخ 2,814 م',
+    lowestPoint: 'البحر الأبيض المتوسط 0 م',
   },
   kw: {
     mountains: [],
@@ -140,6 +182,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '42.5',
     internetUsers: '99%',
     hdiRank: '49',
+    unemploymentRate: '2.2%',
+    inflationRate: '3.1%',
+    tourismArrivals: '1,200,000',
+    coastline: '499 km',
+    highestPoint: 'الخليج العربي 0 م',
+    lowestPoint: 'الخليج العربي 0 م',
   },
   qa: {
     mountains: [
@@ -156,6 +204,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '41.1',
     internetUsers: '99%',
     hdiRank: '40',
+    unemploymentRate: '0.4%',
+    inflationRate: '2.6%',
+    tourismArrivals: '2,500,000',
+    coastline: '563 km',
+    highestPoint: 'الخليج العربي 0 م',
+    lowestPoint: 'الخليج العربي 0 م',
   },
   bh: {
     mountains: [
@@ -172,6 +226,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '45.8',
     internetUsers: '99%',
     hdiRank: '34',
+    unemploymentRate: '1.5%',
+    inflationRate: '1.8%',
+    tourismArrivals: '6,000,000',
+    coastline: '161 km',
+    highestPoint: 'جبل الدخان 134 م',
+    lowestPoint: 'الخليج العربي 0 م',
   },
   om: {
     mountains: [
@@ -190,6 +250,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '30.7',
     internetUsers: '93%',
     hdiRank: '59',
+    unemploymentRate: '2.7%',
+    inflationRate: '2.1%',
+    tourismArrivals: '3,500,000',
+    coastline: '2,092 km',
+    highestPoint: 'جبل شمس 3,009 م',
+    lowestPoint: 'بحر العرب 0 م',
   },
   ye: {
     mountains: [
@@ -208,6 +274,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '36.7',
     internetUsers: '26%',
     hdiRank: '183',
+    unemploymentRate: '13.5%',
+    inflationRate: '24.3%',
+    tourismArrivals: '400,000',
+    coastline: '1,906 km',
+    highestPoint: 'جبل النبي شعيب 3,666 م',
+    lowestPoint: 'بحر العرب 0 م',
   },
   ly: {
     mountains: [
@@ -226,6 +298,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '40.7',
     internetUsers: '60%',
     hdiRank: '104',
+    unemploymentRate: '18.7%',
+    inflationRate: '5.2%',
+    tourismArrivals: '800,000',
+    coastline: '1,770 km',
+    highestPoint: 'بيكو بيانكو 2,267 م',
+    lowestPoint: 'منخفض سبخة غزيل -47 م',
   },
   tn: {
     mountains: [
@@ -244,6 +322,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '35.8',
     internetUsers: '72%',
     hdiRank: '101',
+    unemploymentRate: '15.3%',
+    inflationRate: '4.5%',
+    tourismArrivals: '9,000,000',
+    coastline: '1,148 km',
+    highestPoint: 'جبل الشعانبي 1,544 م',
+    lowestPoint: 'خليج قابس 0 م',
   },
   dz: {
     mountains: [
@@ -262,6 +346,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '27.6',
     internetUsers: '63%',
     hdiRank: '93',
+    unemploymentRate: '11.8%',
+    inflationRate: '5.6%',
+    tourismArrivals: '3,300,000',
+    coastline: '1,622 km',
+    highestPoint: 'جبل تاهات 3,003 م',
+    lowestPoint: 'شط ملغيغ -40 م',
   },
   ma: {
     mountains: [
@@ -280,6 +370,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '39.5',
     internetUsers: '88%',
     hdiRank: '123',
+    unemploymentRate: '9.8%',
+    inflationRate: '3.2%',
+    tourismArrivals: '13,000,000',
+    coastline: '1,835 km',
+    highestPoint: 'جبل توبقال 4,167 م',
+    lowestPoint: 'البحر الأبيض المتوسط 0 م',
   },
   sd: {
     mountains: [
@@ -298,6 +394,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '34.2',
     internetUsers: '30%',
     hdiRank: '170',
+    unemploymentRate: '20.3%',
+    inflationRate: '7.8%',
+    tourismArrivals: '800,000',
+    coastline: '853 km',
+    highestPoint: 'جبل مرة 3,042 م',
+    lowestPoint: 'البحر الأحمر 0 م',
   },
   mr: {
     mountains: [
@@ -316,6 +418,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '37.6',
     internetUsers: '32%',
     hdiRank: '159',
+    unemploymentRate: '11.2%',
+    inflationRate: '3.5%',
+    tourismArrivals: '600,000',
+    coastline: '754 km',
+    highestPoint: 'كدية الجل 915 م',
+    lowestPoint: 'سبخة تشيت -5 م',
   },
   so: {
     mountains: [
@@ -334,6 +442,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '37.5',
     internetUsers: '14%',
     hdiRank: '191',
+    unemploymentRate: '19.4%',
+    inflationRate: '5.8%',
+    tourismArrivals: '300,000',
+    coastline: '3,025 km',
+    highestPoint: 'شيمبيريس 2,460 م',
+    lowestPoint: 'المحيط الهندي 0 م',
   },
   dj: {
     mountains: [
@@ -352,6 +466,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '44.6',
     internetUsers: '56%',
     hdiRank: '171',
+    unemploymentRate: '26.7%',
+    inflationRate: '3.2%',
+    tourismArrivals: '100,000',
+    coastline: '314 km',
+    highestPoint: 'جبل موسى علي 2,028 م',
+    lowestPoint: 'بحيرة عسل -155 م',
   },
   km: {
     mountains: [
@@ -369,6 +489,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '45.3',
     internetUsers: '25%',
     hdiRank: '156',
+    unemploymentRate: '9.5%',
+    inflationRate: '2.8%',
+    tourismArrivals: '50,000',
+    coastline: '340 km',
+    highestPoint: 'جبل كارتالا 2,361 م',
+    lowestPoint: 'المحيط الهندي 0 م',
   },
   ps: {
     mountains: [
@@ -386,6 +512,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '33.7',
     internetUsers: '75%',
     hdiRank: '106',
+    unemploymentRate: '25.7%',
+    inflationRate: '4.1%',
+    tourismArrivals: '1,500,000',
+    coastline: '0 km',
+    highestPoint: 'جبل النبي يونس 1,030 م',
+    lowestPoint: 'البحر الميت -431 م',
   },
   us: {
     mountains: [
@@ -405,6 +537,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '41.4',
     internetUsers: '91%',
     hdiRank: '20',
+    unemploymentRate: '3.7%',
+    inflationRate: '2.9%',
+    tourismArrivals: '79,300,000',
+    coastline: '19,924 km',
+    highestPoint: 'جبل دينالي 6,190 م',
+    lowestPoint: 'وادي الموت -86 م',
   },
   cn: {
     mountains: [
@@ -423,6 +561,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '38.2',
     internetUsers: '73%',
     hdiRank: '75',
+    unemploymentRate: '5.2%',
+    inflationRate: '1.8%',
+    tourismArrivals: '65,700,000',
+    coastline: '14,500 km',
+    highestPoint: 'جبل إفرست 8,849 م',
+    lowestPoint: 'منخفض تورفان -154 م',
   },
   ru: {
     mountains: [
@@ -441,6 +585,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '37.5',
     internetUsers: '85%',
     hdiRank: '56',
+    unemploymentRate: '4.6%',
+    inflationRate: '5.5%',
+    tourismArrivals: '34,000,000',
+    coastline: '37,653 km',
+    highestPoint: 'جبل إلبروس 5,642 م',
+    lowestPoint: 'بحيرة قزوين -28 م',
   },
   gb: {
     mountains: [
@@ -459,6 +609,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '33.2',
     internetUsers: '95%',
     hdiRank: '15',
+    unemploymentRate: '4.2%',
+    inflationRate: '3.6%',
+    tourismArrivals: '40,900,000',
+    coastline: '12,429 km',
+    highestPoint: 'بن نيفيس 1,345 م',
+    lowestPoint: 'المستنقعات -4 م',
   },
   fr: {
     mountains: [
@@ -477,6 +633,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '30.1',
     internetUsers: '86%',
     hdiRank: '28',
+    unemploymentRate: '7.3%',
+    inflationRate: '3.2%',
+    tourismArrivals: '89,400,000',
+    coastline: '4,853 km',
+    highestPoint: 'مونت بلانك 4,809 م',
+    lowestPoint: 'دلتا الرون -2 م',
   },
   de: {
     mountains: [
@@ -495,6 +657,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '31.7',
     internetUsers: '92%',
     hdiRank: '7',
+    unemploymentRate: '3.0%',
+    inflationRate: '2.4%',
+    tourismArrivals: '39,600,000',
+    coastline: '2,389 km',
+    highestPoint: 'تسوغشبيتسه 2,962 م',
+    lowestPoint: 'نوييندورفر زاك -4 م',
   },
   in: {
     mountains: [
@@ -513,6 +681,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '35.7',
     internetUsers: '45%',
     hdiRank: '132',
+    unemploymentRate: '6.8%',
+    inflationRate: '4.9%',
+    tourismArrivals: '17,900,000',
+    coastline: '7,000 km',
+    highestPoint: 'جبل كنشنجنغا 8,586 م',
+    lowestPoint: 'بحيرة كوراي -2 م',
   },
   jp: {
     mountains: [
@@ -531,6 +705,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '32.9',
     internetUsers: '93%',
     hdiRank: '24',
+    unemploymentRate: '2.6%',
+    inflationRate: '2.5%',
+    tourismArrivals: '31,900,000',
+    coastline: '29,751 km',
+    highestPoint: 'جبل فوجي 3,776 م',
+    lowestPoint: 'بحيرة هاتشيروغاتا -4 م',
   },
   kr: {
     mountains: [
@@ -549,6 +729,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '31.4',
     internetUsers: '97%',
     hdiRank: '19',
+    unemploymentRate: '3.7%',
+    inflationRate: '3.6%',
+    tourismArrivals: '17,500,000',
+    coastline: '2,413 km',
+    highestPoint: 'هالاسان 1,947 م',
+    lowestPoint: 'بحر اليابان 0 م',
   },
   br: {
     mountains: [
@@ -567,6 +753,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '48.9',
     internetUsers: '75%',
     hdiRank: '84',
+    unemploymentRate: '8.5%',
+    inflationRate: '4.6%',
+    tourismArrivals: '6,600,000',
+    coastline: '7,491 km',
+    highestPoint: 'بيكو دا نيبينا 2,994 م',
+    lowestPoint: 'المحيط الأطلسي 0 م',
   },
   tr: {
     mountains: [
@@ -585,6 +777,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '41.9',
     internetUsers: '78%',
     hdiRank: '48',
+    unemploymentRate: '10.3%',
+    inflationRate: '14.6%',
+    tourismArrivals: '51,200,000',
+    coastline: '7,200 km',
+    highestPoint: 'جبل أرارات 5,137 م',
+    lowestPoint: 'البحر الأبيض المتوسط 0 م',
   },
   ir: {
     mountains: [
@@ -603,6 +801,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '40.9',
     internetUsers: '80%',
     hdiRank: '76',
+    unemploymentRate: '9.1%',
+    inflationRate: '22.5%',
+    tourismArrivals: '6,600,000',
+    coastline: '2,440 km',
+    highestPoint: 'جبل دماوند 5,610 م',
+    lowestPoint: 'بحر قزوين -28 م',
   },
   il: {
     mountains: [
@@ -621,6 +825,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '38.6',
     internetUsers: '87%',
     hdiRank: '25',
+    unemploymentRate: '3.9%',
+    inflationRate: '3.9%',
+    tourismArrivals: '4,900,000',
+    coastline: '273 km',
+    highestPoint: 'جبل ميرون 1,208 م',
+    lowestPoint: 'البحر الميت -431 م',
   },
   pk: {
     mountains: [
@@ -639,6 +849,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '31.6',
     internetUsers: '37%',
     hdiRank: '161',
+    unemploymentRate: '6.3%',
+    inflationRate: '9.8%',
+    tourismArrivals: '1,900,000',
+    coastline: '1,046 km',
+    highestPoint: 'كيه تو 8,611 م',
+    lowestPoint: 'بحر العرب 0 م',
   },
   it: {
     mountains: [
@@ -657,6 +873,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '35.4',
     internetUsers: '82%',
     hdiRank: '30',
+    unemploymentRate: '8.1%',
+    inflationRate: '2.8%',
+    tourismArrivals: '64,500,000',
+    coastline: '7,600 km',
+    highestPoint: 'مونت بلانك 4,809 م',
+    lowestPoint: 'البحر الأبيض المتوسط 0 م',
   },
   es: {
     mountains: [
@@ -675,6 +897,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '34.3',
     internetUsers: '92%',
     hdiRank: '27',
+    unemploymentRate: '12.3%',
+    inflationRate: '3.5%',
+    tourismArrivals: '83,700,000',
+    coastline: '4,964 km',
+    highestPoint: 'تيده 3,718 م',
+    lowestPoint: 'البحر الأبيض المتوسط 0 م',
   },
   au: {
     mountains: [
@@ -693,6 +921,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '34.3',
     internetUsers: '87%',
     hdiRank: '5',
+    unemploymentRate: '3.7%',
+    inflationRate: '3.9%',
+    tourismArrivals: '9,500,000',
+    coastline: '25,760 km',
+    highestPoint: 'جبل كوسيوسكو 2,228 م',
+    lowestPoint: 'بحيرة إير -15 م',
   },
   ca: {
     mountains: [
@@ -711,6 +945,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '33.3',
     internetUsers: '94%',
     hdiRank: '15',
+    unemploymentRate: '5.5%',
+    inflationRate: '3.1%',
+    tourismArrivals: '22,100,000',
+    coastline: '202,080 km',
+    highestPoint: 'جبل لوغان 5,959 م',
+    lowestPoint: 'البحر القطبي 0 م',
   },
   mx: {
     mountains: [
@@ -729,6 +969,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '45.4',
     internetUsers: '72%',
     hdiRank: '86',
+    unemploymentRate: '3.3%',
+    inflationRate: '5.7%',
+    tourismArrivals: '45,000,000',
+    coastline: '9,330 km',
+    highestPoint: 'بيكو دي أوريزابا 5,636 م',
+    lowestPoint: 'خليج كاليفورنيا 0 م',
   },
   id: {
     mountains: [
@@ -747,6 +993,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '37.8',
     internetUsers: '54%',
     hdiRank: '114',
+    unemploymentRate: '5.3%',
+    inflationRate: '4.2%',
+    tourismArrivals: '15,600,000',
+    coastline: '54,716 km',
+    highestPoint: 'بونشاك جايا 4,884 م',
+    lowestPoint: 'المحيط الهندي 0 م',
   },
   my: {
     mountains: [
@@ -765,6 +1017,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '41.1',
     internetUsers: '85%',
     hdiRank: '62',
+    unemploymentRate: '3.6%',
+    inflationRate: '2.5%',
+    tourismArrivals: '26,100,000',
+    coastline: '4,675 km',
+    highestPoint: 'جبل كينابالو 4,095 م',
+    lowestPoint: 'بحر الصين الجنوبي 0 م',
   },
   th: {
     mountains: [
@@ -783,6 +1041,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '34.9',
     internetUsers: '78%',
     hdiRank: '66',
+    unemploymentRate: '1.0%',
+    inflationRate: '1.5%',
+    tourismArrivals: '39,900,000',
+    coastline: '3,219 km',
+    highestPoint: 'دوي إنتانون 2,565 م',
+    lowestPoint: 'خليج تايلاند 0 م',
   },
   sg: {
     mountains: [
@@ -799,6 +1063,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '45.9',
     internetUsers: '89%',
     hdiRank: '8',
+    unemploymentRate: '2.1%',
+    inflationRate: '3.2%',
+    tourismArrivals: '18,500,000',
+    coastline: '193 km',
+    highestPoint: 'بوکيت تيماه 164 م',
+    lowestPoint: 'مضيق سنغافورة 0 م',
   },
   vn: {
     mountains: [
@@ -817,6 +1087,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '35.7',
     internetUsers: '70%',
     hdiRank: '115',
+    unemploymentRate: '2.1%',
+    inflationRate: '3.6%',
+    tourismArrivals: '18,000,000',
+    coastline: '3,444 km',
+    highestPoint: 'فان زي بان 3,143 م',
+    lowestPoint: 'بحر الصين الجنوبي 0 م',
   },
   ph: {
     mountains: [
@@ -835,6 +1111,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '42.3',
     internetUsers: '53%',
     hdiRank: '116',
+    unemploymentRate: '5.4%',
+    inflationRate: '4.1%',
+    tourismArrivals: '8,300,000',
+    coastline: '36,289 km',
+    highestPoint: 'جبل أفو 2,954 م',
+    lowestPoint: 'بحر الفلبين 0 م',
   },
   ng: {
     mountains: [
@@ -853,6 +1135,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '35.1',
     internetUsers: '36%',
     hdiRank: '163',
+    unemploymentRate: '33.3%',
+    inflationRate: '15.9%',
+    tourismArrivals: '1,600,000',
+    coastline: '853 km',
+    highestPoint: 'تشابال وادي 2,419 م',
+    lowestPoint: 'خليج غينيا 0 م',
   },
   za: {
     mountains: [
@@ -871,6 +1159,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '63.0',
     internetUsers: '70%',
     hdiRank: '110',
+    unemploymentRate: '32.6%',
+    inflationRate: '5.5%',
+    tourismArrivals: '15,200,000',
+    coastline: '2,798 km',
+    highestPoint: 'مفادي 3,450 م',
+    lowestPoint: 'المحيط الأطلسي 0 م',
   },
   et: {
     mountains: [
@@ -889,6 +1183,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '35.0',
     internetUsers: '24%',
     hdiRank: '175',
+    unemploymentRate: '19.1%',
+    inflationRate: '15.8%',
+    tourismArrivals: '1,200,000',
+    coastline: '0 km',
+    highestPoint: 'جبل راس داشين 4,550 م',
+    lowestPoint: 'منخفض داناكيل -125 م',
   },
   ke: {
     mountains: [
@@ -907,6 +1207,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '40.8',
     internetUsers: '23%',
     hdiRank: '152',
+    unemploymentRate: '5.3%',
+    inflationRate: '5.6%',
+    tourismArrivals: '2,500,000',
+    coastline: '536 km',
+    highestPoint: 'جبل كينيا 5,199 م',
+    lowestPoint: 'المحيط الهندي 0 م',
   },
   gh: {
     mountains: [
@@ -924,6 +1230,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '43.5',
     internetUsers: '58%',
     hdiRank: '133',
+    unemploymentRate: '4.2%',
+    inflationRate: '9.9%',
+    tourismArrivals: '1,300,000',
+    coastline: '539 km',
+    highestPoint: 'جبل أفادجاتو 885 م',
+    lowestPoint: 'خليج غينيا 0 م',
   },
   tz: {
     mountains: [
@@ -942,6 +1254,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '40.5',
     internetUsers: '25%',
     hdiRank: '160',
+    unemploymentRate: '8.9%',
+    inflationRate: '4.2%',
+    tourismArrivals: '2,000,000',
+    coastline: '1,424 km',
+    highestPoint: 'جبل كليمنجارو 5,895 م',
+    lowestPoint: 'المحيط الهندي 0 م',
   },
   ug: {
     mountains: [
@@ -960,6 +1278,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '42.7',
     internetUsers: '20%',
     hdiRank: '166',
+    unemploymentRate: '9.5%',
+    inflationRate: '4.3%',
+    tourismArrivals: '700,000',
+    coastline: '0 km',
+    highestPoint: 'جبل ستانلي 5,109 م',
+    lowestPoint: 'بحيرة ألبرت 621 م',
   },
   rw: {
     mountains: [
@@ -978,6 +1302,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '43.7',
     internetUsers: '30%',
     hdiRank: '165',
+    unemploymentRate: '16.8%',
+    inflationRate: '6.2%',
+    tourismArrivals: '1,200,000',
+    coastline: '0 km',
+    highestPoint: 'جبل كاريسيمبي 4,507 م',
+    lowestPoint: 'نهر روزيزي 950 م',
   },
   sn: {
     mountains: [],
@@ -992,6 +1322,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '40.3',
     internetUsers: '50%',
     hdiRank: '170',
+    unemploymentRate: '7.2%',
+    inflationRate: '4.8%',
+    tourismArrivals: '2,500,000',
+    coastline: '531 km',
+    highestPoint: 'تلال فيلا كورا 581 م',
+    lowestPoint: 'المحيط الأطلسي 0 م',
   },
   ci: {
     mountains: [
@@ -1009,6 +1345,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '41.5',
     internetUsers: '44%',
     hdiRank: '159',
+    unemploymentRate: '3.5%',
+    inflationRate: '3.7%',
+    tourismArrivals: '3,000,000',
+    coastline: '515 km',
+    highestPoint: 'جبل ريتشارد مولار 1,750 م',
+    lowestPoint: 'خليج غينيا 0 م',
   },
   cm: {
     mountains: [
@@ -1026,6 +1368,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '46.6',
     internetUsers: '28%',
     hdiRank: '151',
+    unemploymentRate: '4.3%',
+    inflationRate: '5.1%',
+    tourismArrivals: '1,500,000',
+    coastline: '402 km',
+    highestPoint: 'جبل كاميرون 4,095 م',
+    lowestPoint: 'المحيط الأطلسي 0 م',
   },
   ao: {
     mountains: [
@@ -1042,6 +1390,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '51.3',
     internetUsers: '34%',
     hdiRank: '148',
+    unemploymentRate: '8.2%',
+    inflationRate: '21.5%',
+    tourismArrivals: '800,000',
+    coastline: '1,600 km',
+    highestPoint: 'جبل ألتو هاما 2,620 م',
+    lowestPoint: 'المحيط الأطلسي 0 م',
   },
   cd: {
     mountains: [
@@ -1060,6 +1414,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '42.1',
     internetUsers: '14%',
     hdiRank: '179',
+    unemploymentRate: '4.5%',
+    inflationRate: '11.3%',
+    tourismArrivals: '350,000',
+    coastline: '37 km',
+    highestPoint: 'جبل ستانلي 5,109 م',
+    lowestPoint: 'المحيط الأطلسي 0 م',
   },
   ua: {
     mountains: [
@@ -1078,6 +1438,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '25.6',
     internetUsers: '70%',
     hdiRank: '77',
+    unemploymentRate: '9.8%',
+    inflationRate: '11.2%',
+    tourismArrivals: '14,000,000',
+    coastline: '2,782 km',
+    highestPoint: 'جبل هوفرلا 2,061 م',
+    lowestPoint: 'البحر الأسود 0 م',
   },
   pl: {
     mountains: [
@@ -1096,6 +1462,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '30.2',
     internetUsers: '83%',
     hdiRank: '36',
+    unemploymentRate: '3.8%',
+    inflationRate: '5.1%',
+    tourismArrivals: '21,000,000',
+    coastline: '440 km',
+    highestPoint: 'جبل غيفونت 2,499 م',
+    lowestPoint: 'نهر إلبلاغ -2 م',
   },
   nl: {
     mountains: [
@@ -1112,6 +1484,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '28.1',
     internetUsers: '94%',
     hdiRank: '10',
+    unemploymentRate: '3.6%',
+    inflationRate: '3.2%',
+    tourismArrivals: '20,100,000',
+    coastline: '451 km',
+    highestPoint: 'فالسربرغ 322 م',
+    lowestPoint: 'أمستردام -7 م',
   },
   be: {
     mountains: [
@@ -1128,6 +1506,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '27.2',
     internetUsers: '91%',
     hdiRank: '13',
+    unemploymentRate: '5.6%',
+    inflationRate: '3.4%',
+    tourismArrivals: '9,500,000',
+    coastline: '66 km',
+    highestPoint: 'سيغنال دو بوترونج 694 م',
+    lowestPoint: 'نورزي -3 م',
   },
   at: {
     mountains: [
@@ -1146,6 +1530,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '30.8',
     internetUsers: '89%',
     hdiRank: '22',
+    unemploymentRate: '4.9%',
+    inflationRate: '4.0%',
+    tourismArrivals: '31,200,000',
+    coastline: '0 km',
+    highestPoint: 'غروسغليكنر 3,798 م',
+    lowestPoint: 'بحيرة نويزيدلر 115 م',
   },
   ch: {
     mountains: [
@@ -1164,6 +1554,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '33.1',
     internetUsers: '93%',
     hdiRank: '3',
+    unemploymentRate: '2.0%',
+    inflationRate: '2.3%',
+    tourismArrivals: '12,000,000',
+    coastline: '0 km',
+    highestPoint: 'دوفورسبيتسه 4,634 م',
+    lowestPoint: 'بحيرة ماجيوري 193 م',
   },
   se: {
     mountains: [
@@ -1182,6 +1578,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '30.0',
     internetUsers: '94%',
     hdiRank: '7',
+    unemploymentRate: '6.8%',
+    inflationRate: '3.5%',
+    tourismArrivals: '8,700,000',
+    coastline: '3,218 km',
+    highestPoint: 'كبنكايس 2,096 م',
+    lowestPoint: 'بحيرة هامارشون -2 م',
   },
   no: {
     mountains: [
@@ -1200,6 +1602,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '27.7',
     internetUsers: '97%',
     hdiRank: '2',
+    unemploymentRate: '3.7%',
+    inflationRate: '3.8%',
+    tourismArrivals: '6,100,000',
+    coastline: '25,148 km',
+    highestPoint: 'غالديهوبيغن 2,469 م',
+    lowestPoint: 'بحر الشمال 0 م',
   },
   dk: {
     mountains: [
@@ -1216,6 +1624,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '28.2',
     internetUsers: '96%',
     hdiRank: '5',
+    unemploymentRate: '4.5%',
+    inflationRate: '2.9%',
+    tourismArrivals: '12,000,000',
+    coastline: '7,314 km',
+    highestPoint: 'موليهوي 170 م',
+    lowestPoint: 'ليمفيورد 0 م',
   },
   fi: {
     mountains: [
@@ -1233,6 +1647,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '27.4',
     internetUsers: '92%',
     hdiRank: '11',
+    unemploymentRate: '6.7%',
+    inflationRate: '4.1%',
+    tourismArrivals: '6,500,000',
+    coastline: '1,250 km',
+    highestPoint: 'هالدي 1,324 م',
+    lowestPoint: 'بحر البلطيق 0 م',
   },
   pt: {
     mountains: [
@@ -1250,6 +1670,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '34.8',
     internetUsers: '78%',
     hdiRank: '38',
+    unemploymentRate: '6.6%',
+    inflationRate: '3.1%',
+    tourismArrivals: '22,800,000',
+    coastline: '1,793 km',
+    highestPoint: 'جبل بيكو 2,351 م',
+    lowestPoint: 'المحيط الأطلسي 0 م',
   },
   gr: {
     mountains: [
@@ -1268,6 +1694,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '34.3',
     internetUsers: '79%',
     hdiRank: '33',
+    unemploymentRate: '12.4%',
+    inflationRate: '3.9%',
+    tourismArrivals: '33,000,000',
+    coastline: '13,676 km',
+    highestPoint: 'جبل أوليمبوس 2,918 م',
+    lowestPoint: 'البحر الأبيض المتوسط 0 م',
   },
   cz: {
     mountains: [
@@ -1286,6 +1718,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '25.2',
     internetUsers: '84%',
     hdiRank: '32',
+    unemploymentRate: '2.6%',
+    inflationRate: '5.6%',
+    tourismArrivals: '15,000,000',
+    coastline: '0 km',
+    highestPoint: 'سنيزكا 1,602 م',
+    lowestPoint: 'نهر إلبه 115 م',
   },
   ro: {
     mountains: [
@@ -1304,6 +1742,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '34.8',
     internetUsers: '76%',
     hdiRank: '53',
+    unemploymentRate: '4.8%',
+    inflationRate: '5.2%',
+    tourismArrivals: '12,500,000',
+    coastline: '225 km',
+    highestPoint: 'مولدوفيانو 2,544 م',
+    lowestPoint: 'البحر الأسود 0 م',
   },
   hu: {
     mountains: [
@@ -1320,6 +1764,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '29.6',
     internetUsers: '80%',
     hdiRank: '43',
+    unemploymentRate: '3.6%',
+    inflationRate: '4.5%',
+    tourismArrivals: '17,000,000',
+    coastline: '0 km',
+    highestPoint: 'كيكيش 1,014 م',
+    lowestPoint: 'نهر تيسا 78 م',
   },
   ie: {
     mountains: [
@@ -1338,6 +1788,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '31.3',
     internetUsers: '91%',
     hdiRank: '7',
+    unemploymentRate: '4.7%',
+    inflationRate: '3.2%',
+    tourismArrivals: '11,200,000',
+    coastline: '1,448 km',
+    highestPoint: 'كاراونتوهيل 1,038 م',
+    lowestPoint: 'المحيط الأطلسي 0 م',
   },
   nz: {
     mountains: [
@@ -1356,6 +1812,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '33.9',
     internetUsers: '91%',
     hdiRank: '13',
+    unemploymentRate: '3.2%',
+    inflationRate: '4.0%',
+    tourismArrivals: '4,000,000',
+    coastline: '15,134 km',
+    highestPoint: 'جبل كوك 3,724 م',
+    lowestPoint: 'المحيط الهادئ 0 م',
   },
   ar: {
     mountains: [
@@ -1374,6 +1836,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '42.4',
     internetUsers: '78%',
     hdiRank: '46',
+    unemploymentRate: '7.0%',
+    inflationRate: '48.5%',
+    tourismArrivals: '7,400,000',
+    coastline: '4,989 km',
+    highestPoint: 'أكونكاغوا 6,961 م',
+    lowestPoint: 'لاغونا ديل كاربون -105 م',
   },
   cl: {
     mountains: [
@@ -1392,6 +1860,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '44.9',
     internetUsers: '82%',
     hdiRank: '44',
+    unemploymentRate: '8.5%',
+    inflationRate: '5.2%',
+    tourismArrivals: '6,500,000',
+    coastline: '6,435 km',
+    highestPoint: 'أوخوس ديل سالادو 6,893 م',
+    lowestPoint: 'المحيط الهادئ 0 م',
   },
   co: {
     mountains: [
@@ -1410,6 +1884,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '50.4',
     internetUsers: '65%',
     hdiRank: '88',
+    unemploymentRate: '11.2%',
+    inflationRate: '7.2%',
+    tourismArrivals: '5,200,000',
+    coastline: '3,208 km',
+    highestPoint: 'كريستوبال كولون 5,775 م',
+    lowestPoint: 'المحيط الهادئ 0 م',
   },
   pe: {
     mountains: [
@@ -1428,6 +1908,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '43.8',
     internetUsers: '55%',
     hdiRank: '84',
+    unemploymentRate: '6.9%',
+    inflationRate: '3.5%',
+    tourismArrivals: '5,500,000',
+    coastline: '2,414 km',
+    highestPoint: 'هوسكاران 6,768 م',
+    lowestPoint: 'المحيط الهادئ 0 م',
   },
   ve: {
     mountains: [
@@ -1446,6 +1932,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '44.8',
     internetUsers: '62%',
     hdiRank: '120',
+    unemploymentRate: '8.5%',
+    inflationRate: '35.2%',
+    tourismArrivals: '1,500,000',
+    coastline: '2,800 km',
+    highestPoint: 'بيكو بوليفار 4,978 م',
+    lowestPoint: 'بحيرة ماراكايبو 0 م',
   },
   cu: {
     mountains: [
@@ -1463,6 +1955,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '43.5',
     internetUsers: '74%',
     hdiRank: '83',
+    unemploymentRate: '3.2%',
+    inflationRate: '4.5%',
+    tourismArrivals: '4,700,000',
+    coastline: '3,735 km',
+    highestPoint: 'بيكو توركينو 1,974 م',
+    lowestPoint: 'البحر الكاريبي 0 م',
   },
   kp: {
     mountains: [
@@ -1480,6 +1978,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '31.0',
     internetUsers: '0%',
     hdiRank: '180',
+    unemploymentRate: '4.4%',
+    inflationRate: '2.8%',
+    tourismArrivals: '200,000',
+    coastline: '2,495 km',
+    highestPoint: 'بايكتو 2,744 م',
+    lowestPoint: 'بحر اليابان 0 م',
   },
   af: {
     mountains: [
@@ -1497,6 +2001,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '29.4',
     internetUsers: '17%',
     hdiRank: '180',
+    unemploymentRate: '11.2%',
+    inflationRate: '5.3%',
+    tourismArrivals: '100,000',
+    coastline: '0 km',
+    highestPoint: 'نوشاك 7,492 م',
+    lowestPoint: 'نهر سيحون 258 م',
   },
   bd: {
     mountains: [
@@ -1514,6 +2024,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '32.4',
     internetUsers: '39%',
     hdiRank: '133',
+    unemploymentRate: '4.4%',
+    inflationRate: '6.2%',
+    tourismArrivals: '500,000',
+    coastline: '580 km',
+    highestPoint: 'تازينغ دونغ 1,280 م',
+    lowestPoint: 'خليج البنغال 0 م',
   },
   np: {
     mountains: [
@@ -1532,6 +2048,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '32.8',
     internetUsers: '34%',
     hdiRank: '143',
+    unemploymentRate: '11.4%',
+    inflationRate: '5.5%',
+    tourismArrivals: '1,200,000',
+    coastline: '0 km',
+    highestPoint: 'جبل إفرست 8,849 م',
+    lowestPoint: 'نهر كانكاي 70 م',
   },
   lk: {
     mountains: [
@@ -1550,6 +2072,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '39.8',
     internetUsers: '47%',
     hdiRank: '73',
+    unemploymentRate: '4.5%',
+    inflationRate: '4.8%',
+    tourismArrivals: '2,500,000',
+    coastline: '1,340 km',
+    highestPoint: 'بيدوروتالاغالا 2,524 م',
+    lowestPoint: 'المحيط الهندي 0 م',
   },
   mm: {
     mountains: [
@@ -1567,6 +2095,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '38.1',
     internetUsers: '35%',
     hdiRank: '144',
+    unemploymentRate: '2.8%',
+    inflationRate: '7.2%',
+    tourismArrivals: '1,000,000',
+    coastline: '1,930 km',
+    highestPoint: 'هكاكابو رازي 5,881 م',
+    lowestPoint: 'خليج البنغال 0 م',
   },
   kz: {
     mountains: [
@@ -1584,6 +2118,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '29.0',
     internetUsers: '80%',
     hdiRank: '56',
+    unemploymentRate: '4.9%',
+    inflationRate: '8.0%',
+    tourismArrivals: '2,100,000',
+    coastline: '0 km',
+    highestPoint: 'خان تنغري 7,010 م',
+    lowestPoint: 'منخفض كاراغيه -132 م',
   },
   uz: {
     mountains: [
@@ -1601,6 +2141,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '35.3',
     internetUsers: '60%',
     hdiRank: '101',
+    unemploymentRate: '6.8%',
+    inflationRate: '8.7%',
+    tourismArrivals: '1,800,000',
+    coastline: '0 km',
+    highestPoint: 'حضرة سلطان 4,643 م',
+    lowestPoint: 'منخشق كيزيل -12 م',
   },
   az: {
     mountains: [
@@ -1618,6 +2164,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '33.7',
     internetUsers: '82%',
     hdiRank: '91',
+    unemploymentRate: '6.0%',
+    inflationRate: '6.5%',
+    tourismArrivals: '2,800,000',
+    coastline: '0 km',
+    highestPoint: 'بازاردوزو 4,466 م',
+    lowestPoint: 'بحر قزوين -28 م',
   },
   ge: {
     mountains: [
@@ -1636,6 +2188,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '36.4',
     internetUsers: '73%',
     hdiRank: '63',
+    unemploymentRate: '12.4%',
+    inflationRate: '4.2%',
+    tourismArrivals: '4,500,000',
+    coastline: '310 km',
+    highestPoint: 'شخارة 5,193 م',
+    lowestPoint: 'البحر الأسود 0 م',
   },
   is: {
     mountains: [
@@ -1654,6 +2212,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '26.1',
     internetUsers: '99%',
     hdiRank: '3',
+    unemploymentRate: '4.5%',
+    inflationRate: '4.2%',
+    tourismArrivals: '2,300,000',
+    coastline: '4,970 km',
+    highestPoint: 'هفانادالسنوكور 2,110 م',
+    lowestPoint: 'المحيط الأطلسي 0 م',
   },
   lu: {
     mountains: [
@@ -1670,6 +2234,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '31.4',
     internetUsers: '96%',
     hdiRank: '20',
+    unemploymentRate: '4.9%',
+    inflationRate: '3.5%',
+    tourismArrivals: '1,050,000',
+    coastline: '0 km',
+    highestPoint: 'كنيف 560 م',
+    lowestPoint: 'نهر موزيل 133 م',
   },
   mt: {
     mountains: [
@@ -1686,6 +2256,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '28.5',
     internetUsers: '87%',
     hdiRank: '23',
+    unemploymentRate: '3.1%',
+    inflationRate: '2.7%',
+    tourismArrivals: '2,800,000',
+    coastline: '197 km',
+    highestPoint: 'تا دميجريك 253 م',
+    lowestPoint: 'البحر الأبيض المتوسط 0 م',
   },
   cy: {
     mountains: [
@@ -1702,6 +2278,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '31.4',
     internetUsers: '83%',
     hdiRank: '29',
+    unemploymentRate: '5.1%',
+    inflationRate: '3.2%',
+    tourismArrivals: '4,000,000',
+    coastline: '648 km',
+    highestPoint: 'جبل أوليمبوس 1,952 م',
+    lowestPoint: 'البحر الأبيض المتوسط 0 م',
   },
   bg: {
     mountains: [
@@ -1720,6 +2302,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '40.4',
     internetUsers: '69%',
     hdiRank: '68',
+    unemploymentRate: '4.8%',
+    inflationRate: '5.0%',
+    tourismArrivals: '12,000,000',
+    coastline: '354 km',
+    highestPoint: 'موسالا 2,925 م',
+    lowestPoint: 'البحر الأسود 0 م',
   },
   hr: {
     mountains: [
@@ -1737,6 +2325,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '30.2',
     internetUsers: '75%',
     hdiRank: '40',
+    unemploymentRate: '7.0%',
+    inflationRate: '4.5%',
+    tourismArrivals: '20,600,000',
+    coastline: '5,835 km',
+    highestPoint: 'دينارا 1,831 م',
+    lowestPoint: 'البحر الأدرياتيكي 0 م',
   },
   rs: {
     mountains: [
@@ -1754,6 +2348,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '35.0',
     internetUsers: '75%',
     hdiRank: '63',
+    unemploymentRate: '9.4%',
+    inflationRate: '6.2%',
+    tourismArrivals: '1,800,000',
+    coastline: '0 km',
+    highestPoint: 'ميدزور 2,169 م',
+    lowestPoint: 'نهر تيموك 28 م',
   },
   sk: {
     mountains: [
@@ -1771,6 +2371,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '23.2',
     internetUsers: '83%',
     hdiRank: '45',
+    unemploymentRate: '6.1%',
+    inflationRate: '4.8%',
+    tourismArrivals: '5,500,000',
+    coastline: '0 km',
+    highestPoint: 'غيرلاخوفسكي شتيت 2,655 م',
+    lowestPoint: 'نهر تيسا 94 م',
   },
   si: {
     mountains: [
@@ -1788,6 +2394,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '24.6',
     internetUsers: '87%',
     hdiRank: '23',
+    unemploymentRate: '4.9%',
+    inflationRate: '3.7%',
+    tourismArrivals: '5,900,000',
+    coastline: '47 km',
+    highestPoint: 'تريغلاف 2,864 م',
+    lowestPoint: 'البحر الأدرياتيكي 0 م',
   },
   lt: {
     mountains: [
@@ -1804,6 +2416,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '35.4',
     internetUsers: '78%',
     hdiRank: '37',
+    unemploymentRate: '6.3%',
+    inflationRate: '5.1%',
+    tourismArrivals: '2,800,000',
+    coastline: '90 km',
+    highestPoint: 'أوكشتاسيس 294 م',
+    lowestPoint: 'بحر البلطيق 0 م',
   },
   lv: {
     mountains: [
@@ -1820,6 +2438,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '35.2',
     internetUsers: '85%',
     hdiRank: '39',
+    unemploymentRate: '6.6%',
+    inflationRate: '4.6%',
+    tourismArrivals: '2,000,000',
+    coastline: '498 km',
+    highestPoint: 'جايزينكالنس 312 م',
+    lowestPoint: 'بحر البلطيق 0 م',
   },
   ee: {
     mountains: [
@@ -1836,6 +2460,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '30.6',
     internetUsers: '91%',
     hdiRank: '31',
+    unemploymentRate: '5.9%',
+    inflationRate: '5.2%',
+    tourismArrivals: '3,500,000',
+    coastline: '3,794 km',
+    highestPoint: 'سور موناماغي 318 م',
+    lowestPoint: 'بحر البلطيق 0 م',
   },
   do: {
     mountains: [
@@ -1853,6 +2483,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '41.9',
     internetUsers: '77%',
     hdiRank: '88',
+    unemploymentRate: '7.5%',
+    inflationRate: '5.8%',
+    tourismArrivals: '7,600,000',
+    coastline: '1,288 km',
+    highestPoint: 'بيكو دوارتي 3,098 م',
+    lowestPoint: 'بحيرة إينريكييو -46 م',
   },
   cr: {
     mountains: [
@@ -1870,6 +2506,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '49.3',
     internetUsers: '78%',
     hdiRank: '58',
+    unemploymentRate: '11.8%',
+    inflationRate: '3.2%',
+    tourismArrivals: '3,200,000',
+    coastline: '1,290 km',
+    highestPoint: 'سيرو تشيريبو 3,820 م',
+    lowestPoint: 'البحر الكاريبي 0 م',
   },
   pa: {
     mountains: [
@@ -1887,6 +2529,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '50.4',
     internetUsers: '65%',
     hdiRank: '61',
+    unemploymentRate: '7.2%',
+    inflationRate: '2.5%',
+    tourismArrivals: '2,800,000',
+    coastline: '2,490 km',
+    highestPoint: 'بركان بارو 3,474 م',
+    lowestPoint: 'المحيط الهادئ 0 م',
   },
   ec: {
     mountains: [
@@ -1905,6 +2553,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '45.2',
     internetUsers: '60%',
     hdiRank: '95',
+    unemploymentRate: '4.5%',
+    inflationRate: '3.8%',
+    tourismArrivals: '2,600,000',
+    coastline: '2,237 km',
+    highestPoint: 'تشيمبورازو 6,263 م',
+    lowestPoint: 'المحيط الهادئ 0 م',
   },
   bo: {
     mountains: [
@@ -1923,6 +2577,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '41.6',
     internetUsers: '56%',
     hdiRank: '118',
+    unemploymentRate: '4.2%',
+    inflationRate: '3.6%',
+    tourismArrivals: '1,200,000',
+    coastline: '0 km',
+    highestPoint: 'نيفادو ساهاما 6,542 م',
+    lowestPoint: 'نهر باراغواي 90 م',
   },
   uy: {
     mountains: [
@@ -1939,6 +2599,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '40.8',
     internetUsers: '80%',
     hdiRank: '58',
+    unemploymentRate: '8.0%',
+    inflationRate: '5.9%',
+    tourismArrivals: '4,500,000',
+    coastline: '660 km',
+    highestPoint: 'سيرو كاتيدرال 514 م',
+    lowestPoint: 'المحيط الأطلسي 0 م',
   },
   mn: {
     mountains: [
@@ -1956,6 +2622,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '32.7',
     internetUsers: '63%',
     hdiRank: '96',
+    unemploymentRate: '5.2%',
+    inflationRate: '6.8%',
+    tourismArrivals: '600,000',
+    coastline: '0 km',
+    highestPoint: 'قمة خويتن 4,374 م',
+    lowestPoint: 'نهر هوف 560 م',
   },
   kh: {
     mountains: [
@@ -1972,6 +2644,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '36.0',
     internetUsers: '42%',
     hdiRank: '146',
+    unemploymentRate: '6.7%',
+    inflationRate: '4.5%',
+    tourismArrivals: '6,600,000',
+    coastline: '443 km',
+    highestPoint: 'بنوم أورال 1,813 م',
+    lowestPoint: 'خليج تايلاند 0 م',
   },
   mg: {
     mountains: [
@@ -1989,6 +2667,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '42.6',
     internetUsers: '12%',
     hdiRank: '164',
+    unemploymentRate: '3.8%',
+    inflationRate: '5.9%',
+    tourismArrivals: '400,000',
+    coastline: '4,828 km',
+    highestPoint: 'ماروموكوترو 2,876 م',
+    lowestPoint: 'المحيط الهندي 0 م',
   },
   mz: {
     mountains: [
@@ -2006,6 +2690,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '45.6',
     internetUsers: '14%',
     hdiRank: '185',
+    unemploymentRate: '22.5%',
+    inflationRate: '8.7%',
+    tourismArrivals: '3,000,000',
+    coastline: '2,470 km',
+    highestPoint: 'مونتي بينغا 2,436 م',
+    lowestPoint: 'المحيط الهندي 0 م',
   },
   zm: {
     mountains: [
@@ -2022,6 +2712,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '44.5',
     internetUsers: '21%',
     hdiRank: '154',
+    unemploymentRate: '12.5%',
+    inflationRate: '9.2%',
+    tourismArrivals: '1,200,000',
+    coastline: '0 km',
+    highestPoint: 'مفينغا 2,339 م',
+    lowestPoint: 'نهر زامبيزي 329 م',
   },
   fj: {
     mountains: [
@@ -2038,6 +2734,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '36.7',
     internetUsers: '50%',
     hdiRank: '99',
+    unemploymentRate: '4.6%',
+    inflationRate: '3.1%',
+    tourismArrivals: '900,000',
+    coastline: '1,129 km',
+    highestPoint: 'جبل تومانيفي 1,324 م',
+    lowestPoint: 'المحيط الهادئ 0 م',
   },
   pg: {
     mountains: [
@@ -2055,6 +2757,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '41.9',
     internetUsers: '11%',
     hdiRank: '156',
+    unemploymentRate: '2.5%',
+    inflationRate: '4.8%',
+    tourismArrivals: '200,000',
+    coastline: '5,152 km',
+    highestPoint: 'جبل فيلهلم 4,509 م',
+    lowestPoint: 'المحيط الهادئ 0 م',
   },
   al: {
     mountains: [
@@ -2072,6 +2780,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '34.3',
     internetUsers: '70%',
     hdiRank: '67',
+    unemploymentRate: '11.9%',
+    inflationRate: '4.1%',
+    tourismArrivals: '6,400,000',
+    coastline: '362 km',
+    highestPoint: 'جبل كوراب 2,764 م',
+    lowestPoint: 'البحر الأدرياتيكي 0 م',
   },
   am: {
     mountains: [
@@ -2089,6 +2803,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '34.4',
     internetUsers: '70%',
     hdiRank: '76',
+    unemploymentRate: '16.5%',
+    inflationRate: '4.2%',
+    tourismArrivals: '1,700,000',
+    coastline: '0 km',
+    highestPoint: 'جبل أرارات 5,137 م',
+    lowestPoint: 'نهر ديبيد 400 م',
   },
   ba: {
     mountains: [
@@ -2106,6 +2826,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '33.0',
     internetUsers: '70%',
     hdiRank: '74',
+    unemploymentRate: '14.8%',
+    inflationRate: '4.3%',
+    tourismArrivals: '1,200,000',
+    coastline: '20 km',
+    highestPoint: 'ماغليتش 2,386 م',
+    lowestPoint: 'البحر الأدرياتيكي 0 م',
   },
   by: {
     mountains: [
@@ -2122,6 +2848,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '25.8',
     internetUsers: '80%',
     hdiRank: '60',
+    unemploymentRate: '4.2%',
+    inflationRate: '5.5%',
+    tourismArrivals: '3,500,000',
+    coastline: '0 km',
+    highestPoint: 'جبل دزيرجينسكايا 346 م',
+    lowestPoint: 'نهر نيمان 85 م',
   },
   md: {
     mountains: [
@@ -2138,6 +2870,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '25.7',
     internetUsers: '76%',
     hdiRank: '96',
+    unemploymentRate: '4.8%',
+    inflationRate: '6.8%',
+    tourismArrivals: '500,000',
+    coastline: '0 km',
+    highestPoint: 'بالانيشت 430 م',
+    lowestPoint: 'نهر دنيستر 2 م',
   },
   mk: {
     mountains: [
@@ -2155,6 +2893,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '33.0',
     internetUsers: '75%',
     hdiRank: '78',
+    unemploymentRate: '14.5%',
+    inflationRate: '4.8%',
+    tourismArrivals: '1,200,000',
+    coastline: '0 km',
+    highestPoint: 'كوراب 2,764 م',
+    lowestPoint: 'نهر فاردار 50 م',
   },
   me: {
     mountains: [
@@ -2172,6 +2916,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '35.0',
     internetUsers: '75%',
     hdiRank: '48',
+    unemploymentRate: '16.1%',
+    inflationRate: '4.5%',
+    tourismArrivals: '2,500,000',
+    coastline: '294 km',
+    highestPoint: 'زلا كولاتا 2,534 م',
+    lowestPoint: 'البحر الأدرياتيكي 0 م',
   },
   bf: {
     mountains: [
@@ -2188,6 +2938,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '35.3',
     internetUsers: '18%',
     hdiRank: '184',
+    unemploymentRate: '6.1%',
+    inflationRate: '3.6%',
+    tourismArrivals: '500,000',
+    coastline: '0 km',
+    highestPoint: 'تيناكورو 749 م',
+    lowestPoint: 'نهر موهون 200 م',
   },
   bj: {
     mountains: [],
@@ -2202,6 +2958,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '37.8',
     internetUsers: '30%',
     hdiRank: '166',
+    unemploymentRate: '2.4%',
+    inflationRate: '2.8%',
+    tourismArrivals: '400,000',
+    coastline: '121 km',
+    highestPoint: 'جبل سوغبا 658 م',
+    lowestPoint: 'خليج بنين 0 م',
   },
   bw: {
     mountains: [
@@ -2218,6 +2980,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '53.3',
     internetUsers: '40%',
     hdiRank: '119',
+    unemploymentRate: '20.5%',
+    inflationRate: '5.2%',
+    tourismArrivals: '2,200,000',
+    coastline: '0 km',
+    highestPoint: 'تسوديلو 1,390 م',
+    lowestPoint: 'نهر ليمبوبو 513 م',
   },
   cf: {
     mountains: [
@@ -2234,6 +3002,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '56.2',
     internetUsers: '7%',
     hdiRank: '188',
+    unemploymentRate: '7.2%',
+    inflationRate: '3.8%',
+    tourismArrivals: '150,000',
+    coastline: '0 km',
+    highestPoint: 'مونت نغاوي 1,420 م',
+    lowestPoint: 'نهر أوبانغي 335 م',
   },
   cg: {
     mountains: [],
@@ -2248,6 +3022,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '48.9',
     internetUsers: '12%',
     hdiRank: '153',
+    unemploymentRate: '11.2%',
+    inflationRate: '4.1%',
+    tourismArrivals: '400,000',
+    coastline: '169 km',
+    highestPoint: 'الكونغو 500 م',
+    lowestPoint: 'المحيط الأطلسي 0 م',
   },
   ga: {
     mountains: [
@@ -2264,6 +3044,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '38.0',
     internetUsers: '62%',
     hdiRank: '112',
+    unemploymentRate: '20.5%',
+    inflationRate: '3.5%',
+    tourismArrivals: '500,000',
+    coastline: '885 km',
+    highestPoint: 'مونت إيبوندجي 1,575 م',
+    lowestPoint: 'المحيط الأطلسي 0 م',
   },
   gn: {
     mountains: [
@@ -2280,6 +3066,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '33.7',
     internetUsers: '22%',
     hdiRank: '182',
+    unemploymentRate: '4.5%',
+    inflationRate: '5.2%',
+    tourismArrivals: '200,000',
+    coastline: '320 km',
+    highestPoint: 'جبل نيمبا 1,752 م',
+    lowestPoint: 'المحيط الأطلسي 0 م',
   },
   gw: {
     mountains: [],
@@ -2294,6 +3086,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '35.5',
     internetUsers: '15%',
     hdiRank: '177',
+    unemploymentRate: '6.5%',
+    inflationRate: '3.8%',
+    tourismArrivals: '80,000',
+    coastline: '160 km',
+    highestPoint: 'جبل تورين 262 م',
+    lowestPoint: 'المحيط الأطلسي 0 م',
   },
   ls: {
     mountains: [
@@ -2311,6 +3109,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '44.9',
     internetUsers: '27%',
     hdiRank: '168',
+    unemploymentRate: '24.6%',
+    inflationRate: '5.8%',
+    tourismArrivals: '600,000',
+    coastline: '0 km',
+    highestPoint: 'تابانا نتلينيانا 3,482 م',
+    lowestPoint: 'نهر أورانج 1,400 م',
   },
   lr: {
     mountains: [
@@ -2327,6 +3131,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '35.3',
     internetUsers: '12%',
     hdiRank: '178',
+    unemploymentRate: '3.9%',
+    inflationRate: '7.2%',
+    tourismArrivals: '200,000',
+    coastline: '579 km',
+    highestPoint: 'جبل ووتيفي 1,440 م',
+    lowestPoint: 'المحيط الأطلسي 0 م',
   },
   mw: {
     mountains: [
@@ -2343,6 +3153,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '44.7',
     internetUsers: '14%',
     hdiRank: '172',
+    unemploymentRate: '6.8%',
+    inflationRate: '9.5%',
+    tourismArrivals: '900,000',
+    coastline: '0 km',
+    highestPoint: 'جبل مولانجي 3,002 م',
+    lowestPoint: 'بحيرة ملاوي 474 م',
   },
   ml: {
     mountains: [
@@ -2359,6 +3175,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '36.0',
     internetUsers: '17%',
     hdiRank: '186',
+    unemploymentRate: '7.8%',
+    inflationRate: '4.2%',
+    tourismArrivals: '400,000',
+    coastline: '0 km',
+    highestPoint: 'جبل هومبوري 1,155 م',
+    lowestPoint: 'نهر النيجر 50 م',
   },
   na: {
     mountains: [
@@ -2376,6 +3198,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '59.1',
     internetUsers: '41%',
     hdiRank: '139',
+    unemploymentRate: '22.3%',
+    inflationRate: '4.6%',
+    tourismArrivals: '1,700,000',
+    coastline: '1,572 km',
+    highestPoint: 'براندبرغ 2,573 م',
+    lowestPoint: 'المحيط الأطلسي 0 م',
   },
   ne: {
     mountains: [
@@ -2392,6 +3220,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '34.3',
     internetUsers: '13%',
     hdiRank: '189',
+    unemploymentRate: '5.4%',
+    inflationRate: '3.9%',
+    tourismArrivals: '300,000',
+    coastline: '0 km',
+    highestPoint: 'مونت بازغان 2,022 م',
+    lowestPoint: 'نهر النيجر 200 م',
   },
   sl: {
     mountains: [
@@ -2408,6 +3242,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '35.7',
     internetUsers: '11%',
     hdiRank: '181',
+    unemploymentRate: '6.8%',
+    inflationRate: '7.1%',
+    tourismArrivals: '150,000',
+    coastline: '402 km',
+    highestPoint: 'جبل بينتوماني 1,945 م',
+    lowestPoint: 'المحيط الأطلسي 0 م',
   },
   tg: {
     mountains: [
@@ -2424,6 +3264,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '43.1',
     internetUsers: '24%',
     hdiRank: '163',
+    unemploymentRate: '3.9%',
+    inflationRate: '4.2%',
+    tourismArrivals: '800,000',
+    coastline: '56 km',
+    highestPoint: 'جبل أغو 986 م',
+    lowestPoint: 'خليج بنين 0 م',
   },
   er: {
     mountains: [
@@ -2441,6 +3287,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '46.5',
     internetUsers: '15%',
     hdiRank: '180',
+    unemploymentRate: '7.2%',
+    inflationRate: '5.5%',
+    tourismArrivals: '200,000',
+    coastline: '2,234 km',
+    highestPoint: 'جبل سويرا 3,018 م',
+    lowestPoint: 'منخفض كولول -75 م',
   },
   ss: {
     mountains: [
@@ -2457,6 +3309,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '44.1',
     internetUsers: '8%',
     hdiRank: '185',
+    unemploymentRate: '13.5%',
+    inflationRate: '6.8%',
+    tourismArrivals: '50,000',
+    coastline: '0 km',
+    highestPoint: 'جبل كينيتي 3,187 م',
+    lowestPoint: 'نهر النيل الأبيض 350 م',
   },
   ht: {
     mountains: [
@@ -2474,6 +3332,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '41.1',
     internetUsers: '34%',
     hdiRank: '164',
+    unemploymentRate: '25.8%',
+    inflationRate: '12.5%',
+    tourismArrivals: '700,000',
+    coastline: '1,771 km',
+    highestPoint: 'بيك لا سيل 2,680 م',
+    lowestPoint: 'البحر الكاريبي 0 م',
   },
   jm: {
     mountains: [
@@ -2490,6 +3354,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '45.5',
     internetUsers: '48%',
     hdiRank: '102',
+    unemploymentRate: '7.2%',
+    inflationRate: '5.5%',
+    tourismArrivals: '4,200,000',
+    coastline: '1,022 km',
+    highestPoint: 'بلو ماونتن بيك 2,256 م',
+    lowestPoint: 'البحر الكاريبي 0 م',
   },
   hn: {
     mountains: [
@@ -2506,6 +3376,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '48.2',
     internetUsers: '30%',
     hdiRank: '139',
+    unemploymentRate: '6.8%',
+    inflationRate: '4.5%',
+    tourismArrivals: '2,000,000',
+    coastline: '823 km',
+    highestPoint: 'سيرو لاس ميناس 2,870 م',
+    lowestPoint: 'البحر الكاريبي 0 م',
   },
   ni: {
     mountains: [
@@ -2522,6 +3398,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '46.2',
     internetUsers: '41%',
     hdiRank: '128',
+    unemploymentRate: '6.5%',
+    inflationRate: '5.1%',
+    tourismArrivals: '1,800,000',
+    coastline: '910 km',
+    highestPoint: 'موغوتون 2,107 م',
+    lowestPoint: 'البحر الكاريبي 0 م',
   },
   py: {
     mountains: [
@@ -2538,6 +3420,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '47.9',
     internetUsers: '64%',
     hdiRank: '105',
+    unemploymentRate: '7.3%',
+    inflationRate: '4.8%',
+    tourismArrivals: '1,800,000',
+    coastline: '0 km',
+    highestPoint: 'سيرو بيرو 842 م',
+    lowestPoint: 'نهر باراغواي 46 م',
   },
   bt: {
     mountains: [
@@ -2555,6 +3443,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '37.4',
     internetUsers: '50%',
     hdiRank: '127',
+    unemploymentRate: '3.5%',
+    inflationRate: '5.2%',
+    tourismArrivals: '300,000',
+    coastline: '0 km',
+    highestPoint: 'غانغخار بوينسوم 7,570 م',
+    lowestPoint: 'نهر ماناس 97 م',
   },
   la: {
     mountains: [
@@ -2571,6 +3465,12 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '38.8',
     internetUsers: '33%',
     hdiRank: '139',
+    unemploymentRate: '3.8%',
+    inflationRate: '5.1%',
+    tourismArrivals: '4,800,000',
+    coastline: '0 km',
+    highestPoint: 'فو بيا 2,818 م',
+    lowestPoint: 'نهر ميكونغ 70 م',
   },
   bn: {
     mountains: [
@@ -2587,5 +3487,448 @@ export const statisticsData: Record<string, Partial<Country>> = {
     giniIndex: '46.8',
     internetUsers: '95%',
     hdiRank: '51',
-  }
+    unemploymentRate: '5.2%',
+    inflationRate: '2.1%',
+    tourismArrivals: '300,000',
+    coastline: '161 km',
+    highestPoint: 'بوكيت باغون 1,850 م',
+    lowestPoint: 'بحر الصين الجنوبي 0 م',
+  },
+  tw: {
+    mountains: [
+      { name: "Yu Shan", nameAr: "جبل يو شان", height: "3,952 م", description: "أعلى قمة في تايوان" },
+      { name: "Snow Mountain", nameAr: "جبل الثلج", height: "3,886 م", description: "ثاني أعلى قمة في تايوان" },
+    ],
+    armyPersonnel: '170,000',
+    navyPersonnel: '45,000',
+    airForcePersonnel: '50,000',
+    reservePersonnel: '1,657,000',
+    birthRate: '7.5',
+    deathRate: '8.0',
+    medianAge: '43.2',
+    urbanPopulation: '80%',
+    giniIndex: '33.6',
+    internetUsers: '90%',
+    hdiRank: '23',
+    unemploymentRate: '3.7%',
+    inflationRate: '1.5%',
+    tourismArrivals: '10,000,000',
+    coastline: '1,566 km',
+    highestPoint: 'جبل يو شان 3,952 م',
+    lowestPoint: 'بحر الصين 0 م',
+  },
+  li: {
+    mountains: [
+      { name: "Grauspitz", nameAr: "غراوشبيتس", height: "2,599 م", description: "أعلى قمة في ليختنشتاين" },
+    ],
+    armyPersonnel: '0',
+    navyPersonnel: '0',
+    airForcePersonnel: '0',
+    reservePersonnel: '0',
+    birthRate: '10.5',
+    deathRate: '7.5',
+    medianAge: '43.5',
+    urbanPopulation: '14%',
+    giniIndex: '30.0',
+    internetUsers: '98%',
+    hdiRank: '12',
+    unemploymentRate: '2.0%',
+    inflationRate: '0.8%',
+    tourismArrivals: '85,000',
+    coastline: '0 km',
+    highestPoint: 'غراوشبيتس 2,599 م',
+    lowestPoint: 'نهر الراين 430 م',
+  },
+  mc: {
+    mountains: [],
+    armyPersonnel: '0',
+    navyPersonnel: '200',
+    airForcePersonnel: '0',
+    reservePersonnel: '0',
+    birthRate: '6.5',
+    deathRate: '8.0',
+    medianAge: '55.0',
+    urbanPopulation: '100%',
+    giniIndex: '35.0',
+    internetUsers: '95%',
+    hdiRank: '1',
+    unemploymentRate: '3.5%',
+    inflationRate: '1.2%',
+    tourismArrivals: '350,000',
+    coastline: '4 km',
+    highestPoint: 'شاتو 163 م',
+    lowestPoint: 'البحر الأبيض المتوسط 0 م',
+  },
+  ad: {
+    mountains: [
+      { name: "Coma Pedrosa", nameAr: "كوما بيدروسا", height: "2,942 م", description: "أعلى قمة في أندورا" },
+    ],
+    armyPersonnel: '0',
+    navyPersonnel: '0',
+    airForcePersonnel: '0',
+    reservePersonnel: '0',
+    birthRate: '7.5',
+    deathRate: '5.5',
+    medianAge: '44.0',
+    urbanPopulation: '88%',
+    giniIndex: '28.0',
+    internetUsers: '97%',
+    hdiRank: '40',
+    unemploymentRate: '3.0%',
+    inflationRate: '1.0%',
+    tourismArrivals: '3,000,000',
+    coastline: '0 km',
+    highestPoint: 'كوما بيدروسا 2,942 م',
+    lowestPoint: 'وادي فاليرا 840 م',
+  },
+  sm: {
+    mountains: [
+      { name: "Monte Titano", nameAr: "مونتي تيتانو", height: "749 م", description: "أعلى قمة في سان مارينو" },
+    ],
+    armyPersonnel: '0',
+    navyPersonnel: '0',
+    airForcePersonnel: '0',
+    reservePersonnel: '0',
+    birthRate: '8.5',
+    deathRate: '8.0',
+    medianAge: '46.0',
+    urbanPopulation: '98%',
+    giniIndex: '30.0',
+    internetUsers: '90%',
+    hdiRank: '43',
+    unemploymentRate: '4.0%',
+    inflationRate: '1.5%',
+    tourismArrivals: '2,000,000',
+    coastline: '0 km',
+    highestPoint: 'مونتي تيتانو 749 م',
+    lowestPoint: 'وادي أوسا 55 م',
+  },
+  va: {
+    mountains: [],
+    armyPersonnel: '0',
+    navyPersonnel: '0',
+    airForcePersonnel: '0',
+    reservePersonnel: '0',
+    birthRate: '1.5',
+    deathRate: '9.0',
+    medianAge: '30.0',
+    urbanPopulation: '100%',
+    giniIndex: '35.0',
+    internetUsers: '89%',
+    hdiRank: '1',
+    unemploymentRate: '0.5%',
+    inflationRate: '1.0%',
+    tourismArrivals: '5,000,000',
+    coastline: '0 km',
+    highestPoint: 'تلة الفاتيكان 75 م',
+    lowestPoint: 'ساحة القديس بطرس 19 م',
+  },
+  sc: {
+    mountains: [
+      { name: "Morne Seychellois", nameAr: "مورن سيشيلوا", height: "905 م", description: "أعلى قمة في سيشل" },
+    ],
+    armyPersonnel: '200',
+    navyPersonnel: '200',
+    airForcePersonnel: '0',
+    reservePersonnel: '0',
+    birthRate: '16.5',
+    deathRate: '7.5',
+    medianAge: '34.0',
+    urbanPopulation: '58%',
+    giniIndex: '46.8',
+    internetUsers: '62%',
+    hdiRank: '72',
+    unemploymentRate: '4.5%',
+    inflationRate: '3.0%',
+    tourismArrivals: '350,000',
+    coastline: '491 km',
+    highestPoint: 'مورن سيشيلوا 905 م',
+    lowestPoint: 'المحيط الهندي 0 م',
+  },
+  mu: {
+    mountains: [
+      { name: "Piton de la Rivière Noire", nameAr: "بيتون دو لا ريفيير نوار", height: "828 م", description: "أعلى قمة في موريشيوس" },
+    ],
+    armyPersonnel: '0',
+    navyPersonnel: '0',
+    airForcePersonnel: '0',
+    reservePersonnel: '0',
+    birthRate: '10.5',
+    deathRate: '7.5',
+    medianAge: '37.0',
+    urbanPopulation: '41%',
+    giniIndex: '36.8',
+    internetUsers: '65%',
+    hdiRank: '63',
+    unemploymentRate: '7.5%',
+    inflationRate: '3.5%',
+    tourismArrivals: '1,400,000',
+    coastline: '177 km',
+    highestPoint: 'بيتون دو لا ريفيير نوار 828 م',
+    lowestPoint: 'المحيط الهندي 0 م',
+  },
+  cv: {
+    mountains: [
+      { name: "Mount Fogo", nameAr: "جبل فوغو", height: "2,829 م", description: "أعلى قمة في الرأس الأخضر" },
+    ],
+    armyPersonnel: '1,200',
+    navyPersonnel: '100',
+    airForcePersonnel: '0',
+    reservePersonnel: '0',
+    birthRate: '20.5',
+    deathRate: '6.5',
+    medianAge: '27.0',
+    urbanPopulation: '67%',
+    giniIndex: '42.4',
+    internetUsers: '58%',
+    hdiRank: '128',
+    unemploymentRate: '12.5%',
+    inflationRate: '2.5%',
+    tourismArrivals: '750,000',
+    coastline: '965 km',
+    highestPoint: 'جبل فوغو 2,829 م',
+    lowestPoint: 'المحيط الأطلسي 0 م',
+  },
+  bs: {
+    mountains: [
+      { name: "Mount Alvernia", nameAr: "مونت ألفيرنيا", height: "63 م", description: "أعلى قمة في جزر البهاما" },
+    ],
+    armyPersonnel: '850',
+    navyPersonnel: '200',
+    airForcePersonnel: '0',
+    reservePersonnel: '0',
+    birthRate: '15.5',
+    deathRate: '6.5',
+    medianAge: '32.0',
+    urbanPopulation: '83%',
+    giniIndex: '45.0',
+    internetUsers: '85%',
+    hdiRank: '55',
+    unemploymentRate: '12.0%',
+    inflationRate: '2.8%',
+    tourismArrivals: '7,000,000',
+    coastline: '3,542 km',
+    highestPoint: 'مونت ألفيرنيا 63 م',
+    lowestPoint: 'المحيط الأطلسي 0 م',
+  },
+  bb: {
+    mountains: [
+      { name: "Mount Hillaby", nameAr: "مونت هيلابي", height: "340 م", description: "أعلى قمة في بربادوس" },
+    ],
+    armyPersonnel: '500',
+    navyPersonnel: '200',
+    airForcePersonnel: '0',
+    reservePersonnel: '0',
+    birthRate: '11.5',
+    deathRate: '8.5',
+    medianAge: '40.0',
+    urbanPopulation: '31%',
+    giniIndex: '38.5',
+    internetUsers: '82%',
+    hdiRank: '51',
+    unemploymentRate: '8.5%',
+    inflationRate: '3.0%',
+    tourismArrivals: '600,000',
+    coastline: '97 km',
+    highestPoint: 'مونت هيلابي 340 م',
+    lowestPoint: 'المحيط الأطلسي 0 م',
+  },
+  bz: {
+    mountains: [
+      { name: "Doyle's Delight", nameAr: "دويلز ديلايت", height: "1,124 م", description: "أعلى قمة في بليز" },
+    ],
+    armyPersonnel: '1,000',
+    navyPersonnel: '200',
+    airForcePersonnel: '0',
+    reservePersonnel: '0',
+    birthRate: '22.5',
+    deathRate: '5.5',
+    medianAge: '24.0',
+    urbanPopulation: '46%',
+    giniIndex: '47.5',
+    internetUsers: '48%',
+    hdiRank: '118',
+    unemploymentRate: '9.5%',
+    inflationRate: '2.5%',
+    tourismArrivals: '1,500,000',
+    coastline: '386 km',
+    highestPoint: 'دويلز ديلايت 1,124 م',
+    lowestPoint: 'البحر الكاريبي 0 م',
+  },
+  sr: {
+    mountains: [
+      { name: "Juliana Top", nameAr: "قمة جوليانا", height: "1,280 م", description: "أعلى قمة في سورينام" },
+    ],
+    armyPersonnel: '1,800',
+    navyPersonnel: '240',
+    airForcePersonnel: '200',
+    reservePersonnel: '0',
+    birthRate: '18.5',
+    deathRate: '7.0',
+    medianAge: '28.0',
+    urbanPopulation: '66%',
+    giniIndex: '40.0',
+    internetUsers: '43%',
+    hdiRank: '97',
+    unemploymentRate: '8.5%',
+    inflationRate: '5.0%',
+    tourismArrivals: '300,000',
+    coastline: '386 km',
+    highestPoint: 'قمة جوليانا 1,280 م',
+    lowestPoint: 'المحيط الأطلسي 0 م',
+  },
+  gy: {
+    mountains: [
+      { name: "Mount Roraima", nameAr: "جبل رورايما", height: "2,810 م", description: "أعلى قمة في غيانا" },
+    ],
+    armyPersonnel: '3,000',
+    navyPersonnel: '300',
+    airForcePersonnel: '200',
+    reservePersonnel: '0',
+    birthRate: '20.5',
+    deathRate: '7.5',
+    medianAge: '26.0',
+    urbanPopulation: '27%',
+    giniIndex: '44.5',
+    internetUsers: '43%',
+    hdiRank: '107',
+    unemploymentRate: '12.0%',
+    inflationRate: '3.5%',
+    tourismArrivals: '250,000',
+    coastline: '459 km',
+    highestPoint: 'جبل رورايما 2,810 م',
+    lowestPoint: 'المحيط الأطلسي 0 م',
+  },
+  tl: {
+    mountains: [
+      { name: "Mount Tatamailau", nameAr: "جبل تاتاميلاو", height: "2,963 م", description: "أعلى قمة في تيمور الشرقية" },
+    ],
+    armyPersonnel: '2,300',
+    navyPersonnel: '0',
+    airForcePersonnel: '0',
+    reservePersonnel: '0',
+    birthRate: '32.5',
+    deathRate: '5.8',
+    medianAge: '19.0',
+    urbanPopulation: '32%',
+    giniIndex: '38.0',
+    internetUsers: '27%',
+    hdiRank: '141',
+    unemploymentRate: '8.5%',
+    inflationRate: '3.5%',
+    tourismArrivals: '75,000',
+    coastline: '706 km',
+    highestPoint: 'جبل تاتاميلاو 2,963 م',
+    lowestPoint: 'بحر تيمور 0 م',
+  },
+  sb: {
+    mountains: [
+      { name: "Mount Popomanaseu", nameAr: "جبل بوبوماناسيو", height: "2,335 م", description: "أعلى قمة في جزر سليمان" },
+    ],
+    armyPersonnel: '0',
+    navyPersonnel: '0',
+    airForcePersonnel: '0',
+    reservePersonnel: '0',
+    birthRate: '30.5',
+    deathRate: '6.5',
+    medianAge: '20.0',
+    urbanPopulation: '24%',
+    giniIndex: '37.1',
+    internetUsers: '15%',
+    hdiRank: '155',
+    unemploymentRate: '4.5%',
+    inflationRate: '3.0%',
+    tourismArrivals: '30,000',
+    coastline: '5,313 km',
+    highestPoint: 'جبل بوبوماناسيو 2,335 م',
+    lowestPoint: 'المحيط الهادئ 0 م',
+  },
+  vu: {
+    mountains: [
+      { name: "Mount Tabwemasana", nameAr: "جبل تابويماسانا", height: "1,877 م", description: "أعلى قمة في فانواتو" },
+    ],
+    armyPersonnel: '0',
+    navyPersonnel: '0',
+    airForcePersonnel: '0',
+    reservePersonnel: '0',
+    birthRate: '28.5',
+    deathRate: '5.8',
+    medianAge: '21.0',
+    urbanPopulation: '25%',
+    giniIndex: '37.0',
+    internetUsers: '23%',
+    hdiRank: '142',
+    unemploymentRate: '5.0%',
+    inflationRate: '2.5%',
+    tourismArrivals: '120,000',
+    coastline: '2,528 km',
+    highestPoint: 'جبل تابويماسانا 1,877 م',
+    lowestPoint: 'المحيط الهادئ 0 م',
+  },
+  ws: {
+    mountains: [
+      { name: "Silisili", nameAr: "سيليسيلي", height: "1,857 م", description: "أعلى قمة في ساموا" },
+    ],
+    armyPersonnel: '0',
+    navyPersonnel: '0',
+    airForcePersonnel: '0',
+    reservePersonnel: '0',
+    birthRate: '25.5',
+    deathRate: '5.5',
+    medianAge: '22.0',
+    urbanPopulation: '18%',
+    giniIndex: '38.7',
+    internetUsers: '28%',
+    hdiRank: '111',
+    unemploymentRate: '8.5%',
+    inflationRate: '3.0%',
+    tourismArrivals: '180,000',
+    coastline: '403 km',
+    highestPoint: 'سيليسيلي 1,857 م',
+    lowestPoint: 'المحيط الهادئ 0 م',
+  },
+  to: {
+    mountains: [
+      { name: "Kao Volcano", nameAr: "بركان كاو", height: "1,030 م", description: "أعلى نقطة في تونغا" },
+    ],
+    armyPersonnel: '0',
+    navyPersonnel: '200',
+    airForcePersonnel: '0',
+    reservePersonnel: '0',
+    birthRate: '23.5',
+    deathRate: '6.5',
+    medianAge: '22.0',
+    urbanPopulation: '23%',
+    giniIndex: '38.0',
+    internetUsers: '35%',
+    hdiRank: '105',
+    unemploymentRate: '7.5%',
+    inflationRate: '3.5%',
+    tourismArrivals: '90,000',
+    coastline: '419 km',
+    highestPoint: 'بركان كاو 1,030 م',
+    lowestPoint: 'المحيط الهادئ 0 م',
+  },
+  pw: {
+    mountains: [
+      { name: "Mount Ngerchelchuus", nameAr: "جبل نغيرتشلشوس", height: "242 م", description: "أعلى قمة في بالاو" },
+    ],
+    armyPersonnel: '0',
+    navyPersonnel: '0',
+    airForcePersonnel: '0',
+    reservePersonnel: '0',
+    birthRate: '14.5',
+    deathRate: '8.5',
+    medianAge: '33.0',
+    urbanPopulation: '20%',
+    giniIndex: '40.0',
+    internetUsers: '42%',
+    hdiRank: '80',
+    unemploymentRate: '4.5%',
+    inflationRate: '2.0%',
+    tourismArrivals: '90,000',
+    coastline: '1,519 km',
+    highestPoint: 'جبل نغيرتشلشوس 242 م',
+    lowestPoint: 'المحيط الهادئ 0 م',
+  },
 };

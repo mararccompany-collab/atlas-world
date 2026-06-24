@@ -3501,5 +3501,368 @@ export const extraDetailsData: Record<string, Partial<Country>> = {
       { name: "Sultan Hassanal Bolkiah", nameAr: "السلطان حسن البلقية", title: "السلطان", from: "1967", to: "حتى الآن" },
     ],
     leaderChildren: ['السلطان حسن (المهتدي بالله، الملك المتقي بالله، عبد العزيز)'],
+  },
+  tw: {
+    landmarkDetails: [
+      { name: "Taipei 101", nameAr: "برج تايبيه", type: "برج", description: "ناطحة سحاب أيقونية في تايبيه، كانت أطول مبنى في العالم." },
+      { name: "Sun Moon Lake", nameAr: "بحيرة الشمس والقمر", type: "بحيرة", description: "أجمل بحيرة في تايوان، وجهة سياحية شهيرة." },
+      { name: "National Palace Museum", nameAr: "المتحف الوطني", type: "متحف", description: "متحف يضم مجموعة ضخمة من التحف الصينية القديمة." },
+    ],
+    riverDetails: [
+      { name: "Tamsui River", nameAr: "نهر تامسوي", length: "158 كم", description: "نهر رئيسي في شمال تايوان." },
+    ],
+    lakeDetails: [
+      { name: "Sun Moon Lake", nameAr: "بحيرة الشمس والقمر", area: "7.9 كم²", description: "أكبر بحيرة في تايوان، مقصد سياحي رئيسي." },
+    ],
+    borderingSeas: ['بحر الصين الشرقي', 'بحر الصين الجنوبي', 'المحيط الهادئ'],
+    celebrities: [
+      { name: "Ang Lee", nameAr: "أنج لي", profession: "مخرج سينمائي", knownFor: "مخرج حائز على جائزة الأوسكار، أخرج فيلم حياة باي." },
+    ],
+    previousLeaders: [
+      { name: "Lee Teng-hui", nameAr: "لي تنغ هوي", title: "رئيس", from: "1988", to: "2000" },
+      { name: "Chen Shui-bian", nameAr: "تشين شوي بيان", title: "رئيس", from: "2000", to: "2008" },
+      { name: "Ma Ying-jeou", nameAr: "ما يينغ جيو", title: "رئيس", from: "2008", to: "2016" },
+      { name: "Tsai Ing-wen", nameAr: "تساي إنغ ون", title: "رئيس", from: "2016", to: "2024" },
+      { name: "Lai Ching-te", nameAr: "لاي تشينغ دي", title: "رئيس", from: "2024", to: "حتى الآن" },
+    ],
+    leaderChildren: [],
+  },
+  li: {
+    landmarkDetails: [
+      { name: "Vaduz Castle", nameAr: "قلعة فادوز", type: "قلعة", description: "القلعة الرسمية لأمير ليختنشتاين وتطل على العاصمة." },
+      { name: "Gutenberg Castle", nameAr: "قلعة غوتنبرغ", type: "قلعة", description: "قلعة تاريخية في بلدة بالزرس." },
+    ],
+    riverDetails: [
+      { name: "Rhine River", nameAr: "نهر الراين", length: "375 كم", description: "أحد أطول أنهار أوروبا، يمر عبر ليختنشتاين." },
+    ],
+    lakeDetails: [],
+    borderingSeas: [],
+    celebrities: [],
+    previousLeaders: [
+      { name: "Franz Joseph II", nameAr: "فرانز جوزيف الثاني", title: "أمير", from: "1938", to: "1989" },
+      { name: "Hans-Adam II", nameAr: "هانز آدم الثاني", title: "أمير", from: "1989", to: "حتى الآن" },
+    ],
+    leaderChildren: ['ولي العهد ألويس'],
+  },
+  mc: {
+    landmarkDetails: [
+      { name: "Monte Carlo Casino", nameAr: "كازينو مونت كارلو", type: "كازينو", description: "أشهر كازينو في العالم، معلم سياحي في موناكو." },
+      { name: "Prince's Palace", nameAr: "القصر الأميري", type: "قصر", description: "المقر الرسمي لأمير موناكو." },
+    ],
+    riverDetails: [],
+    lakeDetails: [],
+    borderingSeas: ['البحر الأبيض المتوسط'],
+    celebrities: [
+      { name: "Grace Kelly", nameAr: "غريس كيلي", profession: "ممثلة", knownFor: "ممثلة أمريكية أصبحت أميرة موناكو." },
+      { name: "Prince Rainier III", nameAr: "الأمير رينيه الثالث", profession: "أمير", knownFor: "حكم موناكو لمدة 56 عاماً." },
+    ],
+    previousLeaders: [
+      { name: "Prince Rainier III", nameAr: "الأمير رينيه الثالث", title: "أمير", from: "1949", to: "2005" },
+      { name: "Prince Albert II", nameAr: "الأمير ألبير الثاني", title: "أمير", from: "2005", to: "حتى الآن" },
+    ],
+    leaderChildren: ['الأميرة كارولين', 'الأمير ألبير'],
+  },
+  ad: {
+    landmarkDetails: [
+      { name: "Madriu Valley", nameAr: "وادي مادريو", type: "وادي", description: "موقع تراث عالمي لليونسكو، يتميز بجمال طبيعي خلاب." },
+      { name: "Casa de la Vall", nameAr: "كازا دي لا فال", type: "مبنى تاريخي", description: "مقر البرلمان الأندوري القديم." },
+    ],
+    riverDetails: [
+      { name: "Valira River", nameAr: "نهر فاليرا", length: "44 كم", description: "أطول نهر في أندورا." },
+    ],
+    lakeDetails: [],
+    borderingSeas: [],
+    celebrities: [],
+    previousLeaders: [
+      { name: "Joan Enric Vives", nameAr: "جوان إنريك فيفس", title: "الأمير الأسقفي", from: "2003", to: "حتى الآن" },
+      { name: "Emmanuel Macron", nameAr: "إيمانويل ماكرون", title: "الأمير الفرنسي", from: "2017", to: "حتى الآن" },
+    ],
+    leaderChildren: [],
+  },
+  sm: {
+    landmarkDetails: [
+      { name: "Guaita Tower", nameAr: "برج غوايتا", type: "برج", description: "أقدم وأشهر أبراج سان مارينو." },
+      { name: "Palazzo Pubblico", nameAr: "القصر العام", type: "قصر", description: "مقر الحكومة الرسمي في سان مارينو." },
+    ],
+    riverDetails: [],
+    lakeDetails: [],
+    borderingSeas: [],
+    celebrities: [],
+    previousLeaders: [
+      { name: "Captains Regent", nameAr: "القبطان الحاكمان", title: "رئيس الدولة", from: "6 أشهر", to: "حتى الآن" },
+    ],
+    leaderChildren: [],
+  },
+  va: {
+    landmarkDetails: [
+      { name: "St. Peter's Basilica", nameAr: "كاتدرائية القديس بطرس", type: "كاتدرائية", description: "أكبر كنيسة في العالم، قلب الفاتيكان." },
+      { name: "Sistine Chapel", nameAr: "كنيسة سيستين", type: "كنيسة", description: "تشتهر بلوحات مايكل أنجلو على سقفها." },
+    ],
+    riverDetails: [],
+    lakeDetails: [],
+    borderingSeas: [],
+    celebrities: [
+      { name: "Pope Francis", nameAr: "البابا فرنسيس", profession: "بابا", knownFor: "بابا الكنيسة الكاثوليكية، شخصية دينية عالمية." },
+    ],
+    previousLeaders: [
+      { name: "Pope John Paul II", nameAr: "البابا يوحنا بولس الثاني", title: "بابا", from: "1978", to: "2005" },
+      { name: "Pope Benedict XVI", nameAr: "البابا بنديكت السادس عشر", title: "بابا", from: "2005", to: "2013" },
+      { name: "Pope Francis", nameAr: "البابا فرنسيس", title: "بابا", from: "2013", to: "حتى الآن" },
+    ],
+    leaderChildren: [],
+  },
+  sc: {
+    landmarkDetails: [
+      { name: "Vallée de Mai", nameAr: "وادي مي", type: "محمية", description: "موقع تراث عالمي، موطن نخيل جوز الهند الفريد." },
+      { name: "Anse Lazio", nameAr: "شاطئ أنس لازيو", type: "شاطئ", description: "أجمل شاطئ في سيشل." },
+    ],
+    riverDetails: [],
+    lakeDetails: [],
+    borderingSeas: ['المحيط الهندي'],
+    celebrities: [],
+    previousLeaders: [
+      { name: "James Michel", nameAr: "جيمس ميشيل", title: "رئيس", from: "2004", to: "2016" },
+      { name: "Danny Faure", nameAr: "داني فور", title: "رئيس", from: "2016", to: "2020" },
+      { name: "Wavel Ramkalawan", nameAr: "وافيل رامكالاوان", title: "رئيس", from: "2020", to: "حتى الآن" },
+    ],
+    leaderChildren: [],
+  },
+  mu: {
+    landmarkDetails: [
+      { name: "Seven Colored Earths", nameAr: "الأرض ذات الألوان السبعة", type: "موقع طبيعي", description: "ظاهرة جيولوجية فريدة من سبعة ألوان في شاماريل." },
+      { name: "Port Louis", nameAr: "بورت لويس", type: "مدينة", description: "عاصمة موريشيوس وأكبر مدنها." },
+    ],
+    riverDetails: [
+      { name: "Grand River South East", nameAr: "النهر الكبير الجنوبي الشرقي", length: "34 كم", description: "أطول نهر في موريشيوس." },
+    ],
+    lakeDetails: [],
+    borderingSeas: ['المحيط الهندي'],
+    celebrities: [],
+    previousLeaders: [
+      { name: "Sir Seewoosagur Ramgoolam", nameAr: "سير سيووساغور رامغولام", title: "رئيس الوزراء", from: "1968", to: "1982" },
+      { name: "Anerood Jugnauth", nameAr: "أنيرود جوجنوث", title: "رئيس الوزراء", from: "1982", to: "1995" },
+      { name: "Navin Ramgoolam", nameAr: "نافين رامغولام", title: "رئيس الوزراء", from: "1995", to: "2000" },
+      { name: "Paul Bérenger", nameAr: "بول بيرنجر", title: "رئيس الوزراء", from: "2003", to: "2005" },
+      { name: "Pravind Jugnauth", nameAr: "برافيند جوجنوث", title: "رئيس الوزراء", from: "2017", to: "حتى الآن" },
+    ],
+    leaderChildren: [],
+  },
+  cv: {
+    landmarkDetails: [
+      { name: "Mount Fogo", nameAr: "جبل فوغو", type: "بركان", description: "أعلى قمة في الرأس الأخضر، بركان نشط." },
+      { name: "Sal Island", nameAr: "جزيرة سال", type: "جزيرة", description: "أشهر وجهة سياحية في الرأس الأخضر." },
+    ],
+    riverDetails: [],
+    lakeDetails: [],
+    borderingSeas: ['المحيط الأطلسي'],
+    celebrities: [
+      { name: "Cesária Évora", nameAr: "سيزاريا إيفورا", profession: "مطربة", knownFor: "مطربة رأس أخضرية شهيرة، حائزة على جائزة غرامي." },
+    ],
+    previousLeaders: [
+      { name: "Pedro Pires", nameAr: "بيدرو بيريس", title: "رئيس", from: "2001", to: "2011" },
+      { name: "Jorge Carlos Fonseca", nameAr: "خورخي كارلوس فونسيكا", title: "رئيس", from: "2011", to: "2021" },
+      { name: "José Maria Neves", nameAr: "جوزيه ماريا نيفيز", title: "رئيس", from: "2021", to: "حتى الآن" },
+    ],
+    leaderChildren: [],
+  },
+  bs: {
+    landmarkDetails: [
+      { name: "Atlantis Paradise Island", nameAr: "أتلانتس", type: "منتجع", description: "منتجع وفندق فخم في جزر البهاما." },
+      { name: "Pig Beach", nameAr: "شاطئ الخنازير", type: "شاطئ", description: "شاطئ شهير تسبح فيه خنازير برية." },
+    ],
+    riverDetails: [],
+    lakeDetails: [],
+    borderingSeas: ['المحيط الأطلسي', 'البحر الكاريبي'],
+    celebrities: [
+      { name: "Sidney Poitier", nameAr: "سيدني بواتييه", profession: "ممثل", knownFor: "أول ممثل أمريكي من أصل أفريقي يفوز بجائزة الأوسكار." },
+    ],
+    previousLeaders: [
+      { name: "Sir Lynden Pindling", nameAr: "سير ليندن بيندلينغ", title: "رئيس الوزراء", from: "1973", to: "1992" },
+      { name: "Hubert Minnis", nameAr: "هوبيرت مينيس", title: "رئيس الوزراء", from: "2017", to: "2021" },
+      { name: "Philip Davis", nameAr: "فيليب ديفيس", title: "رئيس الوزراء", from: "2021", to: "حتى الآن" },
+    ],
+    leaderChildren: [],
+  },
+  bb: {
+    landmarkDetails: [
+      { name: "Harrison's Cave", nameAr: "كهف هاريسون", type: "كهف", description: "كهف جيري جميل في بربادوس." },
+      { name: "Carlisle Bay", nameAr: "خليج كارلايل", type: "خليج", description: "خليج جميل تشتهر بشواطئه." },
+    ],
+    riverDetails: [],
+    lakeDetails: [],
+    borderingSeas: ['المحيط الأطلسي', 'البحر الكاريبي'],
+    celebrities: [
+      { name: "Rihanna", nameAr: "ريانا", profession: "مطربة", knownFor: "مغنية ورائدة أعمال باربادوسية عالمية." },
+      { name: "Sir Garfield Sobers", nameAr: "سير غارفيلد سوبرز", profession: "لاعب كريكيت", knownFor: "أسطورة الكريكيت في العالم." },
+    ],
+    previousLeaders: [
+      { name: "Errol Barrow", nameAr: "إيرول بارو", title: "رئيس الوزراء", from: "1966", to: "1976" },
+      { name: "Tom Adams", nameAr: "توم آدامز", title: "رئيس الوزراء", from: "1976", to: "1985" },
+      { name: "Freundel Stuart", nameAr: "فروندل ستيوارت", title: "رئيس الوزراء", from: "2010", to: "2018" },
+      { name: "Mia Mottley", nameAr: "ميا موتلي", title: "رئيس الوزراء", from: "2018", to: "حتى الآن" },
+    ],
+    leaderChildren: [],
+  },
+  bz: {
+    landmarkDetails: [
+      { name: "Great Blue Hole", nameAr: "الحفرة الزرقاء العظيمة", type: "حفرة بحرية", description: "حفرة بحرية عملاقة قرب بليز، وجهة غوص عالمية." },
+      { name: "Belize Barrier Reef", nameAr: "حاجز بليز المرجاني", type: "شعاب مرجانية", description: "ثاني أكبر حاجز مرجاني في العالم." },
+    ],
+    riverDetails: [
+      { name: "Belize River", nameAr: "نهر بليز", length: "290 كم", description: "أطول نهر في بليز." },
+    ],
+    lakeDetails: [],
+    borderingSeas: ['البحر الكاريبي'],
+    celebrities: [],
+    previousLeaders: [
+      { name: "George Price", nameAr: "جورج برايس", title: "رئيس الوزراء", from: "1981", to: "1984" },
+      { name: "Dean Barrow", nameAr: "دين بارو", title: "رئيس الوزراء", from: "2008", to: "2020" },
+      { name: "Johnny Briceño", nameAr: "جوني بريسينيو", title: "رئيس الوزراء", from: "2020", to: "حتى الآن" },
+    ],
+    leaderChildren: [],
+  },
+  sr: {
+    landmarkDetails: [
+      { name: "Brownsberg Park", nameAr: "حديقة براونزبرغ", type: "حديقة", description: "محمية طبيعية على هضبة براونزبرغ." },
+      { name: "Paramaribo", nameAr: "باراماريبو", type: "مدينة", description: "عاصمة سورينام، موقع تراث عالمي." },
+    ],
+    riverDetails: [
+      { name: "Suriname River", nameAr: "نهر سورينام", length: "480 كم", description: "أهم نهر في سورينام." },
+    ],
+    lakeDetails: [
+      { name: "Brokopondo Reservoir", nameAr: "بحيرة بروكوبوندو", area: "1,560 كم²", description: "أكبر بحيرة اصطناعية في سورينام." },
+    ],
+    borderingSeas: ['المحيط الأطلسي'],
+    celebrities: [],
+    previousLeaders: [
+      { name: "Dési Bouterse", nameAr: "ديزي باوترسه", title: "رئيس", from: "2010", to: "2020" },
+      { name: "Chan Santokhi", nameAr: "تشان سانتوكي", title: "رئيس", from: "2020", to: "حتى الآن" },
+    ],
+    leaderChildren: [],
+  },
+  gy: {
+    landmarkDetails: [
+      { name: "Kaieteur Falls", nameAr: "شلالات كايتيور", type: "شلال", description: "واحدة من أقوى الشلالات في العالم." },
+      { name: "St. George's Cathedral", nameAr: "كاتدرائية القديس جورج", type: "كاتدرائية", description: "واحدة من أطول الكنائس الخشبية في العالم." },
+    ],
+    riverDetails: [
+      { name: "Essequibo River", nameAr: "نهر إيسيكويبو", length: "1,014 كم", description: "أطول نهر في غيانا." },
+    ],
+    lakeDetails: [],
+    borderingSeas: ['المحيط الأطلسي'],
+    celebrities: [],
+    previousLeaders: [
+      { name: "Cheddi Jagan", nameAr: "شيدي جاغان", title: "رئيس", from: "1992", to: "1997" },
+      { name: "Bharrat Jagdeo", nameAr: "بهارات جاغديو", title: "رئيس", from: "1999", to: "2011" },
+      { name: "David A. Granger", nameAr: "ديفيد غرانجر", title: "رئيس", from: "2015", to: "2020" },
+      { name: "Irfaan Ali", nameAr: "عرفان علي", title: "رئيس", from: "2020", to: "حتى الآن" },
+    ],
+    leaderChildren: [],
+  },
+  tl: {
+    landmarkDetails: [
+      { name: "Cristo Rei", nameAr: "تمثال المسيح الملك", type: "تمثال", description: "تمثال ضخم للمسيح يطل على ديلي." },
+      { name: "Atauro Island", nameAr: "جزيرة أتاورو", type: "جزيرة", description: "جزيرة جميلة شمال ديلي." },
+    ],
+    riverDetails: [],
+    lakeDetails: [],
+    borderingSeas: ['بحر تيمور'],
+    celebrities: [],
+    previousLeaders: [
+      { name: "Xanana Gusmão", nameAr: "زانانا غوسماو", title: "رئيس", from: "2004", to: "2007" },
+      { name: "José Ramos-Horta", nameAr: "جوزيه راموس هورتا", title: "رئيس", from: "2007", to: "2012" },
+      { name: "Taur Matan Ruak", nameAr: "تاور ماتان رواك", title: "رئيس", from: "2012", to: "2017" },
+      { name: "Francisco Guterres", nameAr: "فرانسيسكو غوتيريس", title: "رئيس", from: "2017", to: "2022" },
+      { name: "José Ramos-Horta", nameAr: "جوزيه راموس هورتا", title: "رئيس", from: "2022", to: "حتى الآن" },
+    ],
+    leaderChildren: [],
+  },
+  sb: {
+    landmarkDetails: [
+      { name: "Marovo Lagoon", nameAr: "بحيرة ماروفو", type: "بحيرة", description: "أكبر بحيرة مالحة في العالم." },
+      { name: "Guadalcanal", nameAr: "غوادالكانال", type: "جزيرة", description: "أكبر جزيرة في جزر سليمان." },
+    ],
+    riverDetails: [],
+    lakeDetails: [],
+    borderingSeas: ['المحيط الهادئ'],
+    celebrities: [],
+    previousLeaders: [
+      { name: "Manasseh Sogavare", nameAr: "ماناسيه سوغافار", title: "رئيس الوزراء", from: "2000", to: "2001" },
+      { name: "Gordon Darcy Lilo", nameAr: "غوردون دارسي ليلو", title: "رئيس الوزراء", from: "2011", to: "2014" },
+      { name: "Manasseh Sogavare", nameAr: "ماناسيه سوغافار", title: "رئيس الوزراء", from: "2014", to: "2019" },
+      { name: "Jeremiah Manele", nameAr: "جيرمياه مانيل", title: "رئيس الوزراء", from: "2024", to: "حتى الآن" },
+    ],
+    leaderChildren: [],
+  },
+  vu: {
+    landmarkDetails: [
+      { name: "Mount Yasur", nameAr: "جبل ياسور", type: "بركان", description: "بركان نشط يمكن للسياح رؤيته عن قرب." },
+      { name: "Champagne Beach", nameAr: "شاطئ الشمبانيا", type: "شاطئ", description: "أجمل شاطئ في فانواتو." },
+    ],
+    riverDetails: [],
+    lakeDetails: [],
+    borderingSeas: ['المحيط الهادئ'],
+    celebrities: [],
+    previousLeaders: [
+      { name: "Edward Natapei", nameAr: "إدوارد ناتابي", title: "رئيس الوزراء", from: "2001", to: "2004" },
+      { name: "Charlot Salwai", nameAr: "تشارلوت سالواي", title: "رئيس الوزراء", from: "2016", to: "2020" },
+      { name: "Bob Loughman", nameAr: "بوب لوفمان", title: "رئيس الوزراء", from: "2020", to: "2022" },
+      { name: "Ishmael Kalsakau", nameAr: "إسماعيل كالساكاو", title: "رئيس الوزراء", from: "2022", to: "2023" },
+      { name: "Charlot Salwai", nameAr: "تشارلوت سالواي", title: "رئيس الوزراء", from: "2023", to: "حتى الآن" },
+    ],
+    leaderChildren: [],
+  },
+  ws: {
+    landmarkDetails: [
+      { name: "To Sua Ocean Trench", nameAr: "خندق تو سوا", type: "مسبح طبيعي", description: "مسبح طبيعي عميق محاط بالحدائق." },
+      { name: "Lalomanu Beach", nameAr: "شاطئ لالومانو", type: "شاطئ", description: "أجمل شاطئ في ساموا." },
+    ],
+    riverDetails: [],
+    lakeDetails: [],
+    borderingSeas: ['المحيط الهادئ'],
+    celebrities: [
+      { name: "Dwayne Johnson", nameAr: "دوين جونسون", profession: "ممثل", knownFor: "ممثل أمريكي-سامواني، نجم مصارعة وتمثيل عالمي." },
+      { name: "Roman Reigns", nameAr: "رومان رينز", profession: "مصارع", knownFor: "مصارع محترف من أصل سامواني." },
+    ],
+    previousLeaders: [
+      { name: "Tuilaepa Aiono Sailele Malielegaoi", nameAr: "تويليبا سايليلي ماليليغاوي", title: "رئيس الوزراء", from: "1998", to: "2021" },
+      { name: "Naomi Mataʻafa", nameAr: "نعومي ماتافا", title: "رئيس الوزراء", from: "2021", to: "حتى الآن" },
+    ],
+    leaderChildren: [],
+  },
+  to: {
+    landmarkDetails: [
+      { name: "Ha'amonga 'a Maui", nameAr: "حجر هامونغا", type: "نصب أثري", description: "قوس حجري ضخم من القرن الثالث عشر." },
+      { name: "Royal Palace", nameAr: "القصر الملكي", type: "قصر", description: "المقر الرسمي لملك تونغا." },
+    ],
+    riverDetails: [],
+    lakeDetails: [],
+    borderingSeas: ['المحيط الهادئ'],
+    celebrities: [],
+    previousLeaders: [
+      { name: "King Tāufaʻāhau Tupou IV", nameAr: "الملك تاوفاهاو توبو الرابع", title: "ملك", from: "1965", to: "2006" },
+      { name: "King George Tupou V", nameAr: "الملك جورج توبو الخامس", title: "ملك", from: "2006", to: "2012" },
+      { name: "King Tupou VI", nameAr: "الملك توبو السادس", title: "ملك", from: "2012", to: "حتى الآن" },
+    ],
+    leaderChildren: ['الأميرة لافاكا'],
+  },
+  pw: {
+    landmarkDetails: [
+      { name: "Rock Islands", nameAr: "جزر روك", type: "جزر", description: "مجموعة جزر مرجانية خلابة مدرجة على قائمة التراث العالمي." },
+      { name: "Jellyfish Lake", nameAr: "بحيرة قنديل البحر", type: "بحيرة", description: "بحيرة مليئة بقناديل البحر غير المؤذية." },
+    ],
+    riverDetails: [],
+    lakeDetails: [
+      { name: "Jellyfish Lake", nameAr: "بحيرة قنديل البحر", area: "بحيرة", description: "بحيرة بحرية تضم ملايين قناديل البحر الذهبية." },
+    ],
+    borderingSeas: ['المحيط الهادئ'],
+    celebrities: [],
+    previousLeaders: [
+      { name: "Tommy Remengesau Jr.", nameAr: "تومي ريمنجساو جونيور", title: "رئيس", from: "2001", to: "2009" },
+      { name: "Johnson Toribiong", nameAr: "جونسون توريبيونغ", title: "رئيس", from: "2009", to: "2013" },
+      { name: "Tommy Remengesau Jr.", nameAr: "تومي ريمنجساو جونيور", title: "رئيس", from: "2013", to: "2021" },
+      { name: "Surangel Whipps Jr.", nameAr: "سورانجيل ويبس جونيور", title: "رئيس", from: "2021", to: "حتى الآن" },
+    ],
+    leaderChildren: [],
   }
 };

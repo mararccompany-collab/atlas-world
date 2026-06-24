@@ -401,6 +401,20 @@ export default function CountryDetail({ country, onBack, isFavorite = false, onT
               {country.giniIndex && <StatBox label="مؤشر جيني" value={country.giniIndex} color="emerald" />}
               {country.internetUsers && <StatBox label="مستخدمو الإنترنت" value={country.internetUsers} color="emerald" />}
               {country.hdiRank && <StatBox label="ترتيب التنمية البشرية" value={country.hdiRank} color="emerald" />}
+              {country.unemploymentRate && <StatBox label="نسبة البطالة" value={country.unemploymentRate} color="emerald" />}
+              {country.inflationRate && <StatBox label="معدل التضخم" value={country.inflationRate} color="emerald" />}
+              {country.tourismArrivals && <StatBox label="السياح سنوياً" value={country.tourismArrivals} color="emerald" />}
+            </div>
+          </Section>
+        )}
+
+        {/* Geography */}
+        {(country.coastline || country.highestPoint || country.lowestPoint) && (
+          <Section title="📍 جغرافية" color="sky">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {country.coastline && <StatBox label="طول الساحل" value={country.coastline} color="sky" />}
+              {country.highestPoint && <StatBox label="أعلى نقطة" value={country.highestPoint} color="sky" />}
+              {country.lowestPoint && <StatBox label="أدنى نقطة" value={country.lowestPoint} color="sky" />}
             </div>
           </Section>
         )}
@@ -568,6 +582,7 @@ function Section({ title, color, children }: { title: string; color: string; chi
     sky: 'border-sky-500/30',
     orange: 'border-orange-500/30',
     rose: 'border-rose-500/30',
+    green: 'border-green-500/30',
   };
 
   const titleColors: Record<string, string> = {
@@ -580,6 +595,7 @@ function Section({ title, color, children }: { title: string; color: string; chi
     sky: 'text-sky-400',
     orange: 'text-orange-400',
     rose: 'text-rose-400',
+    green: 'text-green-400',
   };
 
   return (
@@ -596,6 +612,8 @@ function StatBox({ label, value, color }: { label: string; value: string; color:
   const bgColors: Record<string, string> = {
     red: 'bg-red-500/10 border-red-500/20',
     emerald: 'bg-emerald-500/10 border-emerald-500/20',
+    sky: 'bg-sky-500/10 border-sky-500/20',
+    green: 'bg-green-500/10 border-green-500/20',
   };
 
   return (
