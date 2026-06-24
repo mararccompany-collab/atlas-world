@@ -149,6 +149,7 @@ export interface Country {
   nationalBird?: string;
   nationalFlower?: string;
   nationalAnthem?: string;
+  nationalAnthemUrl?: string;
   nationalMotto?: string;
   famousMosques?: string[];
   famousChurches?: string[];

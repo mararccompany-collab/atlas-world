@@ -1,4 +1,5 @@
 import type { Country } from '../data/countriesWithDetails';
+import AnthemPlayer from './AnthemPlayer';
 
 interface CountryDetailProps {
   country: Country;
@@ -577,7 +578,10 @@ export default function CountryDetail({ country, onBack, isFavorite = false, onT
           )}
           {country.nationalAnthem && (
             <Section title="🎵 النشيد الوطني" color="rose">
-              <p className="text-gray-300 text-lg">{country.nationalAnthem}</p>
+              <p className="text-gray-300 text-lg mb-3">{country.nationalAnthem}</p>
+              {country.nationalAnthemUrl && (
+                <AnthemPlayer url={country.nationalAnthemUrl} title={country.nationalAnthem} />
+              )}
             </Section>
           )}
           {country.nationalMotto && (

@@ -1,0 +1,26 @@
+const ARCHIVE = 'https://archive.org/download/us-navy-band-national-anthems-public-domain/Current';
+
+export const anthemUrls: Record<string, string> = {
+  sa: `${ARCHIVE}/Saudi%20Arabia.mp3`,
+  ae: `${ARCHIVE}/United%20Arab%20Emirates.mp3`,
+  eg: `${ARCHIVE}/Egypt.mp3`,
+  iq: `${ARCHIVE}/Iraq.mp3`,
+  jo: `${ARCHIVE}/Jordan.mp3`,
+  lb: `${ARCHIVE}/Lebanon.mp3`,
+  kw: `${ARCHIVE}/Kuwait.mp3`,
+  qa: `${ARCHIVE}/Qatar.mp3`,
+  bh: `${ARCHIVE}/Bahrain.mp3`,
+  om: `${ARCHIVE}/Oman.mp3`,
+  ye: `${ARCHIVE}/Yemen.mp3`,
+  ly: `${ARCHIVE}/Libya.mp3`,
+  tn: `${ARCHIVE}/Tunisia.mp3`,
+  dz: `${ARCHIVE}/Algeria.mp3`,
+  ma: `${ARCHIVE}/Morocco.mp3`,
+  sd: `${ARCHIVE}/Sudan.mp3`,
+  mr: `${ARCHIVE}/Mauritania.mp3`,
+  so: `${ARCHIVE}/Somalia.mp3`,
+  dj: `${ARCHIVE}/Djibouti.mp3`,
+  km: `${ARCHIVE}/Comoros.mp3`,
+  sy: 'https://upload.wikimedia.org/wikipedia/commons/f/fc/National_Anthem_of_Syria.ogg',
+  ps: 'https://upload.wikimedia.org/wikipedia/commons/2/23/Anthem_of_Palestine.ogg',
+};
