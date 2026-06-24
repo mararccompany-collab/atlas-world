@@ -104,6 +104,14 @@ export default function CountryDetail({ country, onBack, isFavorite = false, onT
             <StatBox label="الطائرات" value={country.military.aircraft} color="red" />
             <StatBox label="القوة البحرية" value={country.military.navy} color="red" />
           </div>
+          {(country.armyPersonnel || country.navyPersonnel || country.airForcePersonnel || country.reservePersonnel) && (
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+              {country.armyPersonnel && <StatBox label="القوات البرية" value={country.armyPersonnel} color="red" />}
+              {country.navyPersonnel && <StatBox label="القوات البحرية" value={country.navyPersonnel} color="red" />}
+              {country.airForcePersonnel && <StatBox label="القوات الجوية" value={country.airForcePersonnel} color="red" />}
+              {country.reservePersonnel && <StatBox label="قوات الاحتياط" value={country.reservePersonnel} color="red" />}
+            </div>
+          )}
           {country.military.nuclear && (
             <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-4 mb-4 flex items-center gap-3">
               <span className="text-3xl">☢️</span>
@@ -230,6 +238,29 @@ export default function CountryDetail({ country, onBack, isFavorite = false, onT
             )}
           </Section>
         </div>
+
+        {/* Mountains */}
+        {country.mountains && country.mountains.length > 0 && (
+          <Section title="⛰️ الجبال" color="amber">
+            <div className="space-y-4">
+              {country.mountains.map((m, i) => (
+                <div key={i} className="bg-amber-500/5 border border-amber-500/15 rounded-xl p-4">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">⛰️</span>
+                    <div className="flex-1">
+                      <h4 className="text-amber-300 font-bold text-lg">{m.nameAr}</h4>
+                      <p className="text-gray-400 text-xs">{m.name}</p>
+                      <div className="flex flex-wrap gap-2 mt-2">
+                        <span className="text-xs bg-amber-500/20 px-2 py-0.5 rounded text-amber-300">الارتفاع: {m.height}</span>
+                      </div>
+                      <p className="text-gray-300 text-sm mt-2 leading-relaxed">{m.description}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </Section>
+        )}
 
         {/* Bordering Seas */}
         {country.borderingSeas && country.borderingSeas.length > 0 && (
@@ -358,6 +389,21 @@ export default function CountryDetail({ country, onBack, isFavorite = false, onT
             </Section>
           )}
         </div>
+
+        {/* Comprehensive Statistics */}
+        {(country.birthRate || country.deathRate || country.medianAge || country.urbanPopulation || country.giniIndex || country.internetUsers || country.hdiRank) && (
+          <Section title="📊 إحصائيات شاملة" color="emerald">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {country.birthRate && <StatBox label="معدل المواليد" value={`${country.birthRate} / 1000`} color="emerald" />}
+              {country.deathRate && <StatBox label="معدل الوفيات" value={`${country.deathRate} / 1000`} color="emerald" />}
+              {country.medianAge && <StatBox label="متوسط العمر" value={`${country.medianAge} سنة`} color="emerald" />}
+              {country.urbanPopulation && <StatBox label="سكان الحضر" value={country.urbanPopulation} color="emerald" />}
+              {country.giniIndex && <StatBox label="مؤشر جيني" value={country.giniIndex} color="emerald" />}
+              {country.internetUsers && <StatBox label="مستخدمو الإنترنت" value={country.internetUsers} color="emerald" />}
+              {country.hdiRank && <StatBox label="ترتيب التنمية البشرية" value={country.hdiRank} color="emerald" />}
+            </div>
+          </Section>
+        )}
 
         {/* Religions */}
         {country.religions && country.religions.length > 0 && (

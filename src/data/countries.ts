@@ -68,6 +68,13 @@ export interface PreviousLeader {
   to: string;
 }
 
+export interface MountainDetail {
+  name: string;
+  nameAr: string;
+  height: string;
+  description: string;
+}
+
 export interface Country {
   id: string;
   name: string;
@@ -118,6 +125,19 @@ export interface Country {
   celebrities?: Celebrity[];
   previousLeaders?: PreviousLeader[];
   leaderChildren?: string[];
+  // الإحصائيات الموسعة
+  mountains?: MountainDetail[];
+  armyPersonnel?: string;
+  navyPersonnel?: string;
+  airForcePersonnel?: string;
+  reservePersonnel?: string;
+  birthRate?: string;
+  deathRate?: string;
+  medianAge?: string;
+  urbanPopulation?: string;
+  giniIndex?: string;
+  internetUsers?: string;
+  hdiRank?: string;
 }
 
 export const countries: Country[] = [
