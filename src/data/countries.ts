@@ -56,6 +56,19 @@ export interface Country {
   lakes: string[];
   landmarks: string[];
   newsKeywords: string;
+  // المعلومات الإضافية الجديدة
+  climate?: string;
+  lifeExpectancy?: string;
+  literacyRate?: string;
+  naturalResources?: string[];
+  timezone?: string;
+  topExports?: string[];
+  topImports?: string[];
+  borders?: string[];
+  independence?: string;
+  hungerIndex?: string;
+  devIndex?: string;
+  religions?: string[];
 }
 
 export const countries: Country[] = [

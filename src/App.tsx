@@ -1,5 +1,14 @@
 import { useState, useMemo } from 'react';
 import { countries, Country, continents, regions, subRegions } from './data/countries';
+import CountryDetail from './components/CountryDetail';
+import CountryCard from './components/CountryCard';
+import CountryListItem from './components/CountryListItem';
+import FilterBar from './components/FilterBar';
+import SearchBar from './components/SearchBar';
+import StatsOverview from './components/StatsOverview';
+import AdvancedStats from './components/AdvancedStats';
+import CompareCountries from './components/CompareCountries';
+import Favorites from './components/Favorites';
 
 export default function App() {
   const [search, setSearch] = useState('');
@@ -9,45 +18,193 @@ export default function App() {
   const [selectedCountry, setSelectedCountry] = useState<Country | null>(null);
   const [sortBy, setSortBy] = useState<'name' | 'military' | 'population'>('name');
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
+  const [showAdvancedStats, setShowAdvancedStats] = useState(false);
+  const [showCompare, setShowCompare] = useState(false);
+  const [showFavorites, setShowFavorites] = useState(false);
+  const [favorites, setFavorites] = useState<Country[]>(() => {
+    const saved = localStorage.getItem('favorites');
+    return saved ? JSON.parse(saved) : [];
+  });
 
-  // دالة بحث محسّنة تدعم البحث بالإنجليزية والعربية
+  const addFavorite = (country: Country) => {
+    if (!favorites.some(f => f.id === country.id)) {
+      const newFavorites = [...favorites, country];
+      setFavorites(newFavorites);
+      localStorage.setItem('favorites', JSON.stringify(newFavorites));
+    }
+  };
+
+  const removeFavorite = (id: string) => {
+    const newFavorites = favorites.filter(f => f.id !== id);
+    setFavorites(newFavorites);
+    localStorage.setItem('favorites', JSON.stringify(newFavorites));
+  };
+
+  const isFavorite = (id: string) => favorites.some(f => f.id === id);
+
+  // معالج الأمراض التفاصيل
+  if (selectedCountry) {
+    return (
+      <CountryDetail
+        country={selectedCountry}
+        onBack={() => setSelectedCountry(null)}
+        isFavorite={isFavorite(selectedCountry.id)}
+        onToggleFavorite={() =>
+          isFavorite(selectedCountry.id)
+            ? removeFavorite(selectedCountry.id)
+            : addFavorite(selectedCountry)
+        }
+      />
+    );
+  }
+
+  // عرض الإحصائيات المتقدمة
+  if (showAdvancedStats) {
+    return (
+      <div className="min-h-screen bg-[#0a0a0f] text-white" dir="rtl">
+        <div className="fixed inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent" />
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse" />
+        </div>
+
+        <header className="relative z-10 bg-gradient-to-b from-[#0a0a0f] via-[#0a0a0f]/95 to-transparent sticky top-0 backdrop-blur-xl border-b border-white/5">
+          <div className="max-w-7xl mx-auto px-4 py-6 flex items-center justify-between">
+            <button
+              onClick={() => setShowAdvancedStats(false)}
+              className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 transition-all"
+            >
+              ← العودة
+            </button>
+            <h1 className="text-3xl font-bold bg-gradient-to-r from-amber-300 to-orange-400 bg-clip-text text-transparent">
+              أطلس العالم
+            </h1>
+            <div></div>
+          </div>
+        </header>
+
+        <main className="relative z-10 max-w-7xl mx-auto px-4 py-8">
+          <AdvancedStats countries={filteredCountries} />
+        </main>
+      </div>
+    );
+  }
+
+  // عرض المقارنة
+  if (showCompare) {
+    return (
+      <div className="min-h-screen bg-[#0a0a0f] text-white" dir="rtl">
+        <div className="fixed inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent" />
+        </div>
+
+        <header className="relative z-10 bg-gradient-to-b from-[#0a0a0f] via-[#0a0a0f]/95 to-transparent sticky top-0 backdrop-blur-xl border-b border-white/5">
+          <div className="max-w-7xl mx-auto px-4 py-6 flex items-center justify-between">
+            <button
+              onClick={() => setShowCompare(false)}
+              className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 transition-all"
+            >
+              ← العودة
+            </button>
+            <h1 className="text-3xl font-bold bg-gradient-to-r from-amber-300 to-orange-400 bg-clip-text text-transparent">
+              أطلس العالم
+            </h1>
+            <div></div>
+          </div>
+        </header>
+
+        <main className="relative z-10 max-w-7xl mx-auto px-4 py-8">
+          <CompareCountries onClose={() => setShowCompare(false)} />
+        </main>
+      </div>
+    );
+  }
+
+  // عرض المفضلة
+  if (showFavorites) {
+    return (
+      <div className="min-h-screen bg-[#0a0a0f] text-white" dir="rtl">
+        <div className="fixed inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent" />
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse" />
+        </div>
+
+        <header className="relative z-10 bg-gradient-to-b from-[#0a0a0f] via-[#0a0a0f]/95 to-transparent sticky top-0 backdrop-blur-xl border-b border-white/5">
+          <div className="max-w-7xl mx-auto px-4 py-6 flex items-center justify-between">
+            <button
+              onClick={() => setShowFavorites(false)}
+              className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 transition-all"
+            >
+              ← العودة
+            </button>
+            <h1 className="text-3xl font-bold bg-gradient-to-r from-amber-300 to-orange-400 bg-clip-text text-transparent">
+              أطلس العالم
+            </h1>
+            <div></div>
+          </div>
+        </header>
+
+        <main className="relative z-10 max-w-7xl mx-auto px-4 py-8">
+          <Favorites
+            favorites={favorites}
+            onSelectCountry={setSelectedCountry}
+            onRemoveFavorite={removeFavorite}
+          />
+        </main>
+      </div>
+    );
+  }
+
+  // معالج الحساب الأساسي للمتغيرات
   const normalizeSearch = (text: string) => {
     return text
       .toLowerCase()
       .trim()
-      .replace(/[^\w\s]/g, ''); // إزالة العلامات الترقيمية
+      .replace(/[^\w\sآ-ي]/g, ''); // إزالة العلامات الترقيمية مع الحفاظ على العربية
+  };
+
+  const matchesSearch = (c: Country, searchText: string, searchNorm: string): boolean => {
+    // البحث في الاسم العربي
+    if (c.nameAr.toLowerCase().includes(searchText.toLowerCase())) return true;
+    
+    // البحث في الاسم الإنجليزي
+    if (c.name.toLowerCase().includes(searchText.toLowerCase())) return true;
+    if (normalizeSearch(c.name).includes(searchNorm)) return true;
+    
+    // البحث في العاصمة العربية
+    if (c.capitalAr.toLowerCase().includes(searchText.toLowerCase())) return true;
+    
+    // البحث في العاصمة الإنجليزية
+    if (c.capital.toLowerCase().includes(searchText.toLowerCase())) return true;
+    if (normalizeSearch(c.capital).includes(searchNorm)) return true;
+    
+    // البحث في اسم الزعيم
+    if (c.leader.nameAr.toLowerCase().includes(searchText.toLowerCase())) return true;
+    if (c.leader.name.toLowerCase().includes(searchText.toLowerCase())) return true;
+    
+    // البحث في اسم الزعيم المُطبّع
+    if (normalizeSearch(c.leader.name).includes(searchNorm)) return true;
+    
+    // البحث في المنطقة الجغرافية
+    if (c.region.toLowerCase().includes(searchText.toLowerCase())) return true;
+    if (normalizeSearch(c.region).includes(searchNorm)) return true;
+    
+    // البحث في القارة
+    if (c.continent.toLowerCase().includes(searchText.toLowerCase())) return true;
+    
+    // البحث في معلومات إضافية
+    if (c.location.toLowerCase().includes(searchText.toLowerCase())) return true;
+    
+    return false;
   };
 
   const filteredCountries = useMemo(() => {
     let result = [...countries];
 
     if (search.trim()) {
+      const searchText = search.trim();
       const searchNorm = normalizeSearch(search);
       
-      result = result.filter(c => {
-        // البحث في الاسم العربي
-        if (c.nameAr.includes(search)) return true;
-        
-        // البحث في الاسم الإنجليزي
-        if (normalizeSearch(c.name).includes(searchNorm)) return true;
-        
-        // البحث في العاصمة العربية
-        if (c.capitalAr.includes(search)) return true;
-        
-        // البحث في العاصمة الإنجليزية
-        if (normalizeSearch(c.capital).includes(searchNorm)) return true;
-        
-        // البحث في اسم الزعيم العربي
-        if (c.leader.nameAr.includes(search)) return true;
-        
-        // البحث في اسم الزعيم الإنجليزي
-        if (normalizeSearch(c.leader.name).includes(searchNorm)) return true;
-        
-        // البحث في المنطقة الجغرافية
-        if (normalizeSearch(c.region).includes(searchNorm)) return true;
-        
-        return false;
-      });
+      result = result.filter(c => matchesSearch(c, searchText, searchNorm));
     }
 
     if (selectedContinent !== 'all') {
@@ -246,6 +403,32 @@ export default function App() {
             </div>
             <div className="text-gray-500 text-sm">
               عرض <span className="text-amber-400 font-bold">{filteredCountries.length}</span> دولة
+            </div>
+
+            {/* الأزرار الجديدة */}
+            <div className="flex gap-2 ml-auto">
+              <button
+                onClick={() => setShowAdvancedStats(true)}
+                className="px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border border-cyan-500/50 text-cyan-400 hover:border-cyan-500 transition-all font-semibold text-sm"
+              >
+                📊 إحصائيات
+              </button>
+              <button
+                onClick={() => setShowCompare(true)}
+                className="px-4 py-2 rounded-lg bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/50 text-purple-400 hover:border-purple-500 transition-all font-semibold text-sm"
+              >
+                ⚖️ مقارنة
+              </button>
+              <button
+                onClick={() => setShowFavorites(true)}
+                className={`px-4 py-2 rounded-lg transition-all font-semibold text-sm flex items-center gap-2 ${
+                  favorites.length > 0
+                    ? 'bg-gradient-to-r from-pink-500/20 to-rose-500/20 border border-pink-500/50 text-pink-400'
+                    : 'bg-white/5 border border-white/10 text-gray-400'
+                }`}
+              >
+                ❤️ المفضلة ({favorites.length})
+              </button>
             </div>
           </div>
         </div>

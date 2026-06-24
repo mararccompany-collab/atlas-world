@@ -3,24 +3,42 @@ import { Country } from '../data/countries';
 interface CountryDetailProps {
   country: Country;
   onBack: () => void;
+  isFavorite?: boolean;
+  onToggleFavorite?: () => void;
 }
 
-export default function CountryDetail({ country, onBack }: CountryDetailProps) {
+export default function CountryDetail({ country, onBack, isFavorite = false, onToggleFavorite }: CountryDetailProps) {
   return (
-    <div className="min-h-screen pb-12">
+    <div className="min-h-screen pb-12 bg-[#0a0a0f] text-white" dir="rtl">
+      {/* Fixed Background */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent" />
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse" />
+      </div>
+
       {/* Header */}
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-amber-900/30 via-gray-900 to-gray-950" />
         <div className="relative max-w-7xl mx-auto px-4 py-8">
-          <button
-            onClick={onBack}
-            className="flex items-center gap-2 text-amber-400 hover:text-amber-300 transition-colors mb-6 group"
-          >
-            <svg className="w-5 h-5 rotate-180 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-            <span>العودة للقائمة</span>
-          </button>
+          <div className="flex items-center justify-between mb-6">
+            <button
+              onClick={onBack}
+              className="flex items-center gap-2 text-amber-400 hover:text-amber-300 transition-colors group"
+            >
+              <svg className="w-5 h-5 rotate-180 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+              <span>العودة</span>
+            </button>
+            {onToggleFavorite && (
+              <button
+                onClick={onToggleFavorite}
+                className={`text-3xl transition-transform hover:scale-110 ${isFavorite ? 'text-pink-500' : 'text-gray-400 hover:text-pink-400'}`}
+              >
+                {isFavorite ? '❤️' : '🤍'}
+              </button>
+            )}
+          </div>
 
           <div className="flex flex-col md:flex-row items-start gap-6">
             <div className="text-8xl md:text-9xl">{country.flag}</div>
