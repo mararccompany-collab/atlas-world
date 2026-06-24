@@ -565,6 +565,53 @@ export default function CountryDetail({ country, onBack, isFavorite = false, onT
               <p className="text-gray-300 text-lg">{country.unescoSites}</p>
             </Section>
           )}
+          {country.nationalBird && (
+            <Section title="🦅 الطائر الوطني" color="sky">
+              <p className="text-gray-300 text-lg">{country.nationalBird}</p>
+            </Section>
+          )}
+          {country.nationalFlower && (
+            <Section title="🌸 الزهرة الوطنية" color="green">
+              <p className="text-gray-300 text-lg">{country.nationalFlower}</p>
+            </Section>
+          )}
+          {country.nationalAnthem && (
+            <Section title="🎵 النشيد الوطني" color="rose">
+              <p className="text-gray-300 text-lg">{country.nationalAnthem}</p>
+            </Section>
+          )}
+          {country.nationalMotto && (
+            <Section title="📜 الشعار الوطني" color="amber">
+              <p className="text-gray-300 text-lg">{country.nationalMotto}</p>
+            </Section>
+          )}
+          {country.famousMosques && country.famousMosques.length > 0 && (
+            <Section title="🕌 مساجد شهيرة" color="emerald">
+              <div className="flex flex-wrap gap-2">
+                {country.famousMosques.map((m, i) => (
+                  <span key={i} className="px-3 py-1.5 bg-emerald-500/10 border border-emerald-500/30 rounded-lg text-emerald-300 text-sm">{m}</span>
+                ))}
+              </div>
+            </Section>
+          )}
+          {country.famousChurches && country.famousChurches.length > 0 && (
+            <Section title="⛪ كنائس شهيرة" color="purple">
+              <div className="flex flex-wrap gap-2">
+                {country.famousChurches.map((c, i) => (
+                  <span key={i} className="px-3 py-1.5 bg-purple-500/10 border border-purple-500/30 rounded-lg text-purple-300 text-sm">{c}</span>
+                ))}
+              </div>
+            </Section>
+          )}
+          {country.traditionalFood && country.traditionalFood.length > 0 && (
+            <Section title="🍽 أطباق تقليدية" color="orange">
+              <div className="flex flex-wrap gap-2">
+                {country.traditionalFood.map((f, i) => (
+                  <span key={i} className="px-3 py-1.5 bg-orange-500/10 border border-orange-500/30 rounded-lg text-orange-300 text-sm">{f}</span>
+                ))}
+              </div>
+            </Section>
+          )}
         </div>
       </div>
     </div>

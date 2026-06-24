@@ -223,7 +223,7 @@ export default function App() {
           {/* Ribbon Badge */}
           <div className="flex items-center justify-center mb-4">
             <div className="px-4 py-1.5 rounded-full border border-gold/30 bg-gradient-to-r from-amber-600/10 to-amber-500/10 text-amber-300 text-xs font-semibold tracking-widest">
-              🦅 قوة العالم - الموسوعة العالمية
+              🌍 قوة العالم - الموسوعة العالمية
             </div>
           </div>
 
@@ -231,12 +231,10 @@ export default function App() {
             {/* Left: Logo & Title */}
             <div className="flex items-center gap-6">
               <div className="relative">
-                <div className="text-6xl flex items-center gap-1">
-                  <span className="inline-block drop-shadow-[0_0_15px_rgba(255,80,0,0.8)] animate-pulse">🦅</span>
-                  <span className="text-4xl drop-shadow-[0_0_10px_rgba(255,200,0,0.6)]">⚡</span>
-                </div>
-                <div className="absolute -inset-8 bg-gradient-to-r from-red-700 via-orange-600 to-yellow-700 rounded-full blur-3xl opacity-40 animate-pulse"></div>
-                <div className="absolute -inset-4 bg-gradient-to-r from-red-500 to-orange-500 rounded-full blur-xl opacity-20 animate-[pulse_2s_ease-in-out_infinite]"></div>
+                <div className="text-7xl animate-[spin_12s_linear_infinite] drop-shadow-[0_0_20px_rgba(200,0,0,0.9)_0_0_40px_rgba(100,0,0,0.5)]">🌍</div>
+                <div className="absolute -inset-10 bg-gradient-to-r from-red-800 via-orange-700 to-black rounded-full blur-3xl opacity-50 animate-pulse"></div>
+                <div className="absolute -inset-5 bg-gradient-to-r from-red-600 to-amber-900 rounded-full blur-2xl opacity-30 animate-[pulse_1.5s_ease-in-out_infinite]"></div>
+                <div className="absolute inset-0 rounded-full border-2 border-red-500/30 blur-sm animate-pulse"></div>
               </div>
               <div className="space-y-1">
                 <h1 className="text-5xl lg:text-6xl font-black tracking-tight">

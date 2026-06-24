@@ -1,4 +1,4 @@
-import { Country } from './countries';
+﻿import { Country } from './countries';
 
 // الإحصائيات الموسعة: الجبال، تفاصيل عسكرية، معدل المواليد/الوفيات، إلخ
 export const statisticsData: Record<string, Partial<Country>> = {
@@ -51,27 +51,32 @@ export const statisticsData: Record<string, Partial<Country>> = {
   },
   eg: {
     mountains: [
-      { name: "Jabal Sinai", nameAr: "جبل سيناء", height: "2,285 م", description: "جبل مقدس في شبه جزيرة سيناء" },
-      { name: "Jabal Shayeb", nameAr: "جبل شايب", height: "2,187 م", description: "أعلى جبل في الصحراء الشرقية" },
-      { name: "Jabal Katherine", nameAr: "جبل كاترين", height: "2,629 م", description: "أعلى قمة في مصر" },
+      { name: "Jabal Katherine", nameAr: "جبل كاترين", height: "2,629 م", description: "أعلى قمة في مصر، يقع في جنوب سيناء، جبل مقدس للديانات الثلاث" },
+      { name: "Jabal Sinai", nameAr: "جبل سيناء (جبل موسى)", height: "2,285 م", description: "جبل مقدس في شبه جزيرة سيناء، يُعتقد أن موسى تلقى فيه الوصايا العشر" },
+      { name: "Jabal Shayeb", nameAr: "جبل شايب", height: "2,187 م", description: "أعلى جبل في الصحراء الشرقية، يقع على ساحل البحر الأحمر" },
+      { name: "Jabal Umm Shumar", nameAr: "جبل أم شومر", height: "2,586 م", description: "ثاني أعلى قمة في مصر، يقع في محمية سانت كاترين" },
+      { name: "Jabal Serbal", nameAr: "جبل سربال", height: "2,070 م", description: "جبل في جنوب سيناء، يعتقد أنه الموقع الأصلي لجبل موسى" },
     ],
     armyPersonnel: '310,000',
     navyPersonnel: '18,000',
     airForcePersonnel: '30,000',
     reservePersonnel: '375,000',
-    birthRate: '22.6',
-    deathRate: '5.8',
-    medianAge: '24.1',
+    birthRate: '22.6 (مولود لكل 1,000 نسمة)',
+    deathRate: '5.8 (وفاة لكل 1,000 نسمة)',
+    medianAge: '24.1 سنة',
     urbanPopulation: '43%',
     giniIndex: '31.5',
-    internetUsers: '72%',
-    hdiRank: '105',
+    internetUsers: '72% من السكان',
+    hdiRank: 'المركز 105 عالمياً (مرتفع)',
     unemploymentRate: '7.3%',
     inflationRate: '5.8%',
-    tourismArrivals: '13,000,000',
-    coastline: '2,450 km',
+    tourismArrivals: '13,000,000 سائح سنوياً (2023)',
+    coastline: '2,450 كم (1,050 كم على المتوسط، 1,100 كم على الأحمر، 193 كم قناة السويس)',
     highestPoint: 'جبل كاترين 2,629 م',
-    lowestPoint: 'منخفض القطارة -133 م',
+    lowestPoint: 'منخفض القطارة -133 م تحت سطح البحر',
+    mainCrops: ['القطن', 'القمح', 'الأرز', 'الذرة', 'قصب السكر', 'الفواكه', 'الخضروات'],
+    suezCanalRevenue: '9.4 مليار $ سنوياً',
+    remittances: '32 مليار $ سنوياً (تحويلات المصريين بالخارج)',
   },
   iq: {
     mountains: [
