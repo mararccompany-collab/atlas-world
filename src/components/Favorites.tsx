@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { Country } from '../data/countries';
+import { useState } from 'react';
+import type { Country } from '../data/countriesWithDetails';
 
 interface FavoritesProps {
   favorites: Country[];

@@ -1,4 +1,4 @@
-import { countries } from '../data/countries';
+import { enrichedCountries as countries } from '../data/countriesWithDetails';
 
 export default function StatsOverview() {
   const totalCountries = countries.length;

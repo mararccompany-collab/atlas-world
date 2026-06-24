@@ -1,4 +1,4 @@
-import { Country } from '../data/countries';
+import type { Country } from '../data/countriesWithDetails';
 
 interface CountryDetailProps {
   country: Country;
@@ -255,6 +255,110 @@ export default function CountryDetail({ country, onBack, isFavorite = false, onT
             </div>
           </div>
         </Section>
+
+        {/* Additional Details */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {country.climate && (
+            <Section title="🌤 المناخ" color="amber">
+              <p className="text-gray-300 leading-relaxed">{country.climate}</p>
+            </Section>
+          )}
+          {country.timezone && (
+            <Section title="🕐 المنطقة الزمنية" color="blue">
+              <p className="text-gray-300 text-lg">{country.timezone}</p>
+            </Section>
+          )}
+          {country.independence && (
+            <Section title="📜 الاستقلال" color="purple">
+              <p className="text-gray-300 text-lg">{country.independence}</p>
+            </Section>
+          )}
+          {country.lifeExpectancy && (
+            <Section title="👴 متوسط العمر المتوقع" color="green">
+              <p className="text-gray-300 text-lg">{country.lifeExpectancy}</p>
+            </Section>
+          )}
+          {country.literacyRate && (
+            <Section title="📚 نسبة التعليم" color="cyan">
+              <p className="text-gray-300 text-lg">{country.literacyRate}</p>
+            </Section>
+          )}
+          {country.devIndex && (
+            <Section title="📊 مؤشر التنمية البشرية" color="emerald">
+              <p className="text-gray-300 text-lg">{country.devIndex}</p>
+            </Section>
+          )}
+          {country.hungerIndex && (
+            <Section title="🍞 مؤشر الجوع العالمي" color="orange">
+              <p className="text-gray-300 text-lg">{country.hungerIndex}</p>
+            </Section>
+          )}
+        </div>
+
+        {/* Religions */}
+        {country.religions && country.religions.length > 0 && (
+          <Section title="🕌 الديانات" color="purple">
+            <div className="flex flex-wrap gap-3">
+              {country.religions.map((rel, i) => (
+                <span key={i} className="px-4 py-2 bg-purple-500/10 border border-purple-500/30 rounded-xl text-white">
+                  {rel}
+                </span>
+              ))}
+            </div>
+          </Section>
+        )}
+
+        {/* Exports & Imports */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {country.topExports && country.topExports.length > 0 && (
+            <Section title="📤 أهم الصادرات" color="emerald">
+              <div className="flex flex-wrap gap-2">
+                {country.topExports.map((item, i) => (
+                  <span key={i} className="px-3 py-1.5 bg-emerald-500/10 border border-emerald-500/30 rounded-lg text-emerald-300 text-sm">
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </Section>
+          )}
+          {country.topImports && country.topImports.length > 0 && (
+            <Section title="📥 أهم الواردات" color="blue">
+              <div className="flex flex-wrap gap-2">
+                {country.topImports.map((item, i) => (
+                  <span key={i} className="px-3 py-1.5 bg-blue-500/10 border border-blue-500/30 rounded-lg text-blue-300 text-sm">
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </Section>
+          )}
+        </div>
+
+        {/* Borders */}
+        {country.borders && country.borders.length > 0 && (
+          <Section title="🗺 الدول المجاورة" color="cyan">
+            <div className="flex flex-wrap gap-2">
+              {country.borders.map((b, i) => (
+                <span key={i} className="px-3 py-1.5 bg-cyan-500/10 border border-cyan-500/30 rounded-lg text-cyan-300 text-sm">
+                  {b}
+                </span>
+              ))}
+            </div>
+          </Section>
+        )}
+
+        {/* Natural Resources */}
+        {country.naturalResources && country.naturalResources.length > 0 && (
+          <Section title="⛏ الموارد الطبيعية" color="amber">
+            <div className="flex flex-wrap gap-2">
+              {country.naturalResources.map((r, i) => (
+                <span key={i} className="px-3 py-1.5 bg-amber-500/10 border border-amber-500/30 rounded-lg text-amber-300 text-sm">
+                  {r}
+                </span>
+              ))}
+            </div>
+          </Section>
+        )}
       </div>
     </div>
   );

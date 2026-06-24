@@ -1,4 +1,4 @@
-import { Country } from '../data/countries';
+import type { Country } from '../data/countriesWithDetails';
 
 interface CountryListItemProps {
   country: Country;
