@@ -40,7 +40,7 @@ export default function CountryListItem({ country, onClick }: CountryListItemPro
         </div>
       </div>
 
-      <AnthemPlayButton url={country.nationalAnthemUrl} code={country.id} title={country.nationalAnthem || country.nameAr} countryNameEn={country.name} />
+      <AnthemPlayButton url={country.nationalAnthemUrl} code={country.id} title={country.nationalAnthem || country.nameAr} />
 
       <div className="flex gap-6 flex-shrink-0 text-center">
         <div>

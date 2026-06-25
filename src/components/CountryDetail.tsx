@@ -606,7 +606,7 @@ export default function CountryDetail({ country, onBack, isFavorite = false, onT
               {country.nationalAnthem && (
                 <p className="text-gray-300 text-lg mb-3">{country.nationalAnthem}</p>
               )}
-              <AnthemPlayer url={country.nationalAnthemUrl} code={country.id} title={country.nationalAnthem || country.nameAr} countryNameEn={country.name} />
+              <AnthemPlayer url={country.nationalAnthemUrl} title={country.nationalAnthem || country.nameAr} />
             </Section>
           )}
           {country.nationalMotto && (
