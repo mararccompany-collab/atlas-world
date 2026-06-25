@@ -1,36 +1,71 @@
 import { useRef, useState } from 'react';
+import { searchAnthemUrl } from '../utils/anthemSearch';
 
 interface AnthemPlayButtonProps {
   url?: string;
+  code?: string;
   title: string;
+  countryNameEn?: string;
 }
 
-export default function AnthemPlayButton({ url, title }: AnthemPlayButtonProps) {
+export default function AnthemPlayButton({ url, code, title, countryNameEn }: AnthemPlayButtonProps) {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [playing, setPlaying] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [hasError, setHasError] = useState(false);
+  const currentUrlRef = useRef(url);
 
-  const toggle = (e: React.MouseEvent) => {
+  const toggle = async (e: React.MouseEvent) => {
     e.stopPropagation();
-    if (!audioRef.current || !url) return;
+    const el = audioRef.current;
+    if (!el) return;
+
     if (playing) {
-      audioRef.current.pause();
-    } else {
-      audioRef.current.play();
+      el.pause();
+      setPlaying(false);
+      return;
     }
-    setPlaying(!playing);
+
+    setHasError(false);
+
+    try {
+      await el.play();
+      setPlaying(true);
+    } catch {
+      if (!code || !countryNameEn) { setHasError(true); return; }
+
+      setLoading(true);
+      try {
+        const newUrl = await searchAnthemUrl(code, countryNameEn);
+        currentUrlRef.current = newUrl;
+        el.src = newUrl;
+        await el.play();
+        setPlaying(true);
+      } catch {
+        setHasError(true);
+      } finally {
+        setLoading(false);
+      }
+    }
   };
 
-  if (!url) return null;
+  if (!url && !code) return null;
 
   return (
     <>
-      <audio ref={audioRef} src={url} onEnded={() => setPlaying(false)} />
+      <audio ref={audioRef} src={url || (code ? `https://nationalanthems.info/${code}.mp3` : '')} onEnded={() => setPlaying(false)} />
       <button
         onClick={toggle}
-        className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 hover:text-rose-300 transition-all text-xs font-medium"
-        title={playing ? 'إيقاف' : `تشغيل ${title}`}
+        disabled={loading}
+        className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-rose-500/20 border border-rose-500/30 text-rose-400 hover:bg-rose-500/30 hover:text-rose-300 transition-all text-xs font-medium disabled:opacity-50"
+        title={loading ? 'جاري التحميل...' : playing ? 'إيقاف' : `تشغيل ${title}`}
       >
-        {playing ? (
+        {loading ? (
+          <svg className="w-3.5 h-3.5 animate-spin" fill="none" viewBox="0 0 24 24">
+            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+          </svg>
+        ) : playing ? (
           <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
             <rect x="6" y="4" width="4" height="16" rx="1" />
             <rect x="14" y="4" width="4" height="16" rx="1" />
@@ -40,7 +75,7 @@ export default function AnthemPlayButton({ url, title }: AnthemPlayButtonProps) 
             <path d="M8 5v14l11-7z" />
           </svg>
         )}
-        {playing ? 'جاري' : 'النشيد'}
+        {loading ? 'تحميل' : playing ? 'جاري' : hasError ? 'خطأ' : 'النشيد'}
       </button>
     </>
   );

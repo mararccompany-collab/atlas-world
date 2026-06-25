@@ -601,12 +601,12 @@ export default function CountryDetail({ country, onBack, isFavorite = false, onT
               <p className="text-gray-300 text-lg">{country.nationalFlower}</p>
             </Section>
           )}
-          {country.nationalAnthem && (
+          {country.nationalAnthemUrl && (
             <Section title="🎵 النشيد الوطني" color="rose">
-              <p className="text-gray-300 text-lg mb-3">{country.nationalAnthem}</p>
-              {country.nationalAnthemUrl && (
-                <AnthemPlayer url={country.nationalAnthemUrl} title={country.nationalAnthem} />
+              {country.nationalAnthem && (
+                <p className="text-gray-300 text-lg mb-3">{country.nationalAnthem}</p>
               )}
+              <AnthemPlayer url={country.nationalAnthemUrl} code={country.id} title={country.nationalAnthem || country.nameAr} countryNameEn={country.name} />
             </Section>
           )}
           {country.nationalMotto && (
