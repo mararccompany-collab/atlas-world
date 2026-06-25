@@ -1,4 +1,5 @@
 import type { Country } from '../data/countriesWithDetails';
+import AnthemPlayButton from './AnthemPlayButton';
 
 interface CountryCardProps {
   country: Country;
@@ -29,6 +30,9 @@ export default function CountryCard({ country, onClick }: CountryCardProps) {
             )}
           </div>
         </div>
+      </div>
+      <div className="mt-3 flex justify-end">
+        <AnthemPlayButton url={country.nationalAnthemUrl} title={country.nationalAnthem || country.nameAr} />
       </div>
       <div className="mt-4 grid grid-cols-2 gap-2 text-xs">
         <div className="bg-gray-800/60 rounded-lg p-2 text-center">

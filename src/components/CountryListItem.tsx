@@ -1,4 +1,5 @@
 import type { Country } from '../data/countriesWithDetails';
+import AnthemPlayButton from './AnthemPlayButton';
 
 interface CountryListItemProps {
   country: Country;
@@ -38,6 +39,8 @@ export default function CountryListItem({ country, onClick }: CountryListItemPro
           </div>
         </div>
       </div>
+
+      <AnthemPlayButton url={country.nationalAnthemUrl} title={country.nationalAnthem || country.nameAr} />
 
       <div className="flex gap-6 flex-shrink-0 text-center">
         <div>
