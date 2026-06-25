@@ -3,6 +3,8 @@ import { enrichmentData } from './countries-enriched';
 import { extraDetailsData } from './countries-extra-details';
 import { statisticsData } from './countries-statistics';
 import { anthemUrls } from './anthemUrls';
+import { leaderImages } from './leaderImages';
+import { arabExtraInfo } from './arabExtraInfo';
 
 function enrichCountries(): Country[] {
   return countries.map(c => {
@@ -10,11 +12,19 @@ function enrichCountries(): Country[] {
     const extra2 = extraDetailsData[c.id];
     const extra3 = statisticsData[c.id];
     const anthemUrl = anthemUrls[c.id];
+    const leaderImg = leaderImages[c.id];
+    const extraInfo = arabExtraInfo[c.id];
     let result = { ...c };
     if (extra) result = { ...result, ...extra };
     if (extra2) result = { ...result, ...extra2 };
     if (extra3) result = { ...result, ...extra3 };
     if (anthemUrl) result.nationalAnthemUrl = anthemUrl;
+    if (leaderImg) result.leaderImageUrl = leaderImg;
+    if (extraInfo) {
+      result.phoneCode = extraInfo.phoneCode;
+      result.internetTLD = extraInfo.internetTLD;
+      result.established = extraInfo.established;
+    }
     return result;
   });
 }

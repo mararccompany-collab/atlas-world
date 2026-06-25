@@ -150,6 +150,10 @@ export interface Country {
   nationalFlower?: string;
   nationalAnthem?: string;
   nationalAnthemUrl?: string;
+  leaderImageUrl?: string;
+  phoneCode?: string;
+  internetTLD?: string;
+  established?: string;
   nationalMotto?: string;
   famousMosques?: string[];
   famousChurches?: string[];
