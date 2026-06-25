@@ -8,8 +8,12 @@ import AdvancedStats from './components/AdvancedStats';
 import CompareCountries from './components/CompareCountries';
 import Favorites from './components/Favorites';
 import WarGame from './components/WarGame';
+import WelcomeScreen from './components/WelcomeScreen';
 
 export default function App() {
+  const [showWelcome, setShowWelcome] = useState(() => {
+    return !localStorage.getItem('hasVisited');
+  });
   const [search, setSearch] = useState('');
   const [selectedContinent, setSelectedContinent] = useState('all');
   const [selectedRegion, setSelectedRegion] = useState('all');
@@ -86,6 +90,20 @@ export default function App() {
     }
     return result;
   }, [search, selectedContinent, selectedRegion, selectedSubRegion, sortBy]);
+
+  if (showWelcome) {
+    return (
+      <WelcomeScreen
+        countryCount={countries.length}
+        arabCount={countries.filter(c => c.isArab).length}
+        nuclearCount={countries.filter(c => c.military.nuclear).length}
+        onEnter={() => {
+          localStorage.setItem('hasVisited', 'true');
+          setShowWelcome(false);
+        }}
+      />
+    );
+  }
 
   if (selectedCountry) {
     return (
