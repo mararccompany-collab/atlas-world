@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import type { Country } from '../data/countriesWithDetails';
 import AnthemPlayer from './AnthemPlayer';
 
@@ -6,6 +7,25 @@ interface CountryDetailProps {
   onBack: () => void;
   isFavorite?: boolean;
   onToggleFavorite?: () => void;
+}
+
+function LeaderAvatar({ url, name, nameAr }: { url?: string; name: string; nameAr: string }) {
+  const [failed, setFailed] = useState(false);
+  if (!url || failed) {
+    const initial = nameAr.charAt(0) || name.charAt(0) || '?';
+    return (
+      <div className="flex-shrink-0 w-28 h-28 md:w-32 md:h-32 rounded-full border-4 border-purple-500/30 shadow-lg shadow-purple-500/20 bg-gradient-to-br from-purple-600/30 to-purple-800/30 flex items-center justify-center">
+        <span className="text-4xl md:text-5xl font-bold text-purple-400">{initial}</span>
+      </div>
+    );
+  }
+  return (
+    <div className="flex-shrink-0">
+      <div className="w-28 h-28 md:w-32 md:h-32 rounded-full border-4 border-purple-500/30 shadow-lg shadow-purple-500/20 overflow-hidden bg-purple-500/10">
+        <img src={url} alt={name} className="w-full h-full object-cover" onError={() => setFailed(true)} />
+      </div>
+    </div>
+  );
 }
 
 export default function CountryDetail({ country, onBack, isFavorite = false, onToggleFavorite }: CountryDetailProps) {
@@ -80,16 +100,7 @@ export default function CountryDetail({ country, onBack, isFavorite = false, onT
         <Section title="👑 رئيس الدولة" color="purple">
           <div className="bg-gradient-to-r from-purple-500/10 to-transparent rounded-xl p-6 border border-purple-500/20">
             <div className="flex items-start gap-5">
-              {country.leaderImageUrl && (
-                <div className="flex-shrink-0">
-                  <img
-                    src={country.leaderImageUrl}
-                    alt={country.leader.name}
-                    className="w-28 h-28 md:w-32 md:h-32 rounded-full object-cover border-4 border-purple-500/30 shadow-lg shadow-purple-500/20"
-                    onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
-                  />
-                </div>
-              )}
+              <LeaderAvatar url={country.leaderImageUrl} name={country.leader.name} nameAr={country.leader.nameAr} />
               <div className="flex-1 min-w-0">
                 <h3 className="text-2xl font-bold text-white">{country.leader.nameAr}</h3>
                 <p className="text-purple-400 text-sm mt-1">{country.leader.name}</p>
